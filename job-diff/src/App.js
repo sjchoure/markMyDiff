@@ -69,7 +69,7 @@ const App = () => {
       <CssBaseline />
       <Box flexGrow={1} px={3}>
         <Stack py={1} direction="row" spacing={4} sx={{ color: "#0080FB" }}>
-          <Stack direction="row" spacing={1}>
+          <Stack direction="row" spacing={1} sx={{ display:"flex", alignItems: "center"}}>
             <WorkIcon sx={{ fontSize: "2rem" }} />
             <Typography sx={{ fontSize: "2rem" }} >
               MarkMyDiff
