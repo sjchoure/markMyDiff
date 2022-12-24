@@ -70,13 +70,13 @@ const App = () => {
       <Box flexGrow={1} px={3}>
         <Stack py={1} direction="row" spacing={4} sx={{ color: "#0080FB" }}>
           <Stack direction="row" spacing={1}>
-            <WorkIcon sx={{ fontSize: 34 }} />
-            <Typography variant="h4" component="h1">
+            <WorkIcon sx={{ fontSize: "2rem" }} />
+            <Typography sx={{ fontSize: "2rem" }} >
               MarkMyDiff
             </Typography>
           </Stack>
           <Button variant="outlined">
-            <ArticleIcon size={20} />
+            <ArticleIcon />
             <Typography>Blog</Typography>
           </Button>
         </Stack>
