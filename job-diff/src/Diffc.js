@@ -5,8 +5,9 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardHeader from "@mui/material/CardHeader";
 import CardActions from "@mui/material/CardActions";
-import IconButton from "@mui/material/IconButton";
+import Button from "@mui/material/Button";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import Collapse from "@mui/material/Collapse";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
@@ -54,9 +55,19 @@ const Diffc = ({ diffText, title, stat }) => {
           {diffText ? (
             <>
               <CardActions>
-                <IconButton onClick={() => setExpand(!expand)}>
-                  <KeyboardArrowDownIcon />
-                </IconButton>
+                <Button onClick={() => setExpand(!expand)}>
+                  {expand ? (
+                    <>
+                      <Typography>Hide Result</Typography>
+                      <KeyboardArrowUpIcon />
+                    </>
+                  ) : (
+                    <>
+                      <Typography>Show Result</Typography>
+                      <KeyboardArrowDownIcon />
+                    </>
+                  )}
+                </Button>
               </CardActions>
               <Collapse in={expand}>
                 <CardContent>{files.map(renderFile)}</CardContent>

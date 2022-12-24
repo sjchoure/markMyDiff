@@ -77,7 +77,7 @@ const App = () => {
           </Stack>
           <Button variant="outlined">
             <ArticleIcon size={20} />
-            Blog
+            <Typography>Blog</Typography>
           </Button>
         </Stack>
         {companies != null && fileContents != null && fileStats != null ? (
