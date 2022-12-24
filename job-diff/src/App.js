@@ -8,6 +8,9 @@ import Typography from "@mui/material/Typography";
 import WorkIcon from "@mui/icons-material/Work";
 import Stack from "@mui/material/Stack";
 import CircularProgress from "@mui/material/CircularProgress";
+import Button from "@mui/material/Button";
+import ArticleIcon from "@mui/icons-material/Article";
+import IconButton from "@mui/material/IconButton";
 
 const App = () => {
   const [companies, setCompanies] = React.useState(null);
@@ -65,11 +68,17 @@ const App = () => {
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
       <Box flexGrow={1} px={3}>
-        <Stack py={1} direction="row" spacing={1} sx={{ color: "#0080FB" }}>
-          <WorkIcon sx={{ fontSize: 34 }} />
-          <Typography variant="h4" component="h1">
-            MarkMyDiff
-          </Typography>
+        <Stack py={1} direction="row" spacing={4} sx={{ color: "#0080FB" }}>
+          <Stack direction="row" spacing={1}>
+            <WorkIcon sx={{ fontSize: 34 }} />
+            <Typography variant="h4" component="h1">
+              MarkMyDiff
+            </Typography>
+          </Stack>
+          <Button variant="outlined">
+            <ArticleIcon size={20} />
+            Blog
+          </Button>
         </Stack>
         {companies != null && fileContents != null && fileStats != null ? (
           companies.map((company, i) => {
