@@ -8,6 +8,8 @@ import CardActions from "@mui/material/CardActions";
 import IconButton from "@mui/material/IconButton";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import Collapse from "@mui/material/Collapse";
+import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
 import React from "react";
 import "react-diff-view/style/index.css";
 const randomCommitHash = () => Math.random().toString(36).slice(2, 9);
@@ -45,7 +47,10 @@ const Diffc = ({ diffText, title, stat }) => {
     <Container maxWidth={false} disableGutters={true}>
       <Box py={1}>
         <Card raised={true}>
-          <CardHeader title={title} subheader={dateTime.toLocaleString()} />
+          <CardHeader
+            title={title}
+            subheader={"Last Checked: " + dateTime.toLocaleString()}
+          />
           {diffText ? (
             <>
               <CardActions>
