@@ -4,6 +4,9 @@ import React from "react";
 import Diffc from "./Diffc.js";
 import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import WorkIcon from "@mui/icons-material/Work";
+import Stack from "@mui/material/Stack";
 
 const App = () => {
   const [companies, setCompanies] = React.useState(null);
@@ -34,7 +37,9 @@ const App = () => {
     async function fetchFile() {
       if (companies != null) {
         const requests = companies.map((company) =>
-          axios.get(`https://horrible-falcon-29.telebit.io/results/${company.name}/diff`)
+          axios.get(
+            `https://horrible-falcon-29.telebit.io/results/${company.name}/diff`
+          )
         );
         const responses = await Promise.all(requests);
         const temp = responses.map((response) => response.data);
@@ -59,12 +64,22 @@ const App = () => {
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
       <Box flexGrow={1}>
+        <Stack px={3} py={1} direction="row" spacing={1} sx={{ color: "#0080FB"}}>
+          <WorkIcon sx={{ fontSize: 34 }} />
+          <Typography  variant="h4" component="h1">
+            MarkMyDiff
+          </Typography>
+        </Stack>
         <div>
           {companies != null && fileContents != null && fileStats != null
             ? companies.map((company, i) => {
                 return (
                   <div key={company.name}>
-                    <Diffc diffText={fileContents[i]} title={company.name} stat={fileStats[i]} />
+                    <Diffc
+                      diffText={fileContents[i]}
+                      title={company.name}
+                      stat={fileStats[i]}
+                    />
                   </div>
                 );
               })
