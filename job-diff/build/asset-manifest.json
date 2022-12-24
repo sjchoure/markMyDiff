@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/markMyDiff/static/css/main.146d445f.css",
-    "main.js": "/markMyDiff/static/js/main.e47c28ea.js",
+    "main.js": "/markMyDiff/static/js/main.07b5a226.js",
     "index.html": "/markMyDiff/index.html",
     "main.146d445f.css.map": "/markMyDiff/static/css/main.146d445f.css.map",
-    "main.e47c28ea.js.map": "/markMyDiff/static/js/main.e47c28ea.js.map"
+    "main.07b5a226.js.map": "/markMyDiff/static/js/main.07b5a226.js.map"
   },
   "entrypoints": [
     "static/css/main.146d445f.css",
-    "static/js/main.e47c28ea.js"
+    "static/js/main.07b5a226.js"
   ]
 }

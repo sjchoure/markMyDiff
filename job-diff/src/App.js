@@ -7,6 +7,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import WorkIcon from "@mui/icons-material/Work";
 import Stack from "@mui/material/Stack";
+import CircularProgress from "@mui/material/CircularProgress";
 
 const App = () => {
   const [companies, setCompanies] = React.useState(null);
@@ -63,28 +64,34 @@ const App = () => {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <Box flexGrow={1}>
-        <Stack px={3} py={1} direction="row" spacing={1} sx={{ color: "#0080FB"}}>
+      <Box flexGrow={1} px={3}>
+        <Stack py={1} direction="row" spacing={1} sx={{ color: "#0080FB" }}>
           <WorkIcon sx={{ fontSize: 34 }} />
-          <Typography  variant="h4" component="h1">
+          <Typography variant="h4" component="h1">
             MarkMyDiff
           </Typography>
         </Stack>
-        <div>
-          {companies != null && fileContents != null && fileStats != null
-            ? companies.map((company, i) => {
-                return (
-                  <div key={company.name}>
-                    <Diffc
-                      diffText={fileContents[i]}
-                      title={company.name}
-                      stat={fileStats[i]}
-                    />
-                  </div>
-                );
-              })
-            : null}
-        </div>
+        {companies != null && fileContents != null && fileStats != null ? (
+          companies.map((company, i) => {
+            return (
+              <Diffc
+                key={company.name}
+                diffText={fileContents[i]}
+                title={company.name}
+                stat={fileStats[i]}
+              />
+            );
+          })
+        ) : (
+          <Box sx={{ display: "flex" }}>
+            <Stack py={1} direction="row" spacing={1}>
+              <CircularProgress size={25} />
+              <Typography variant="h5" component="h5">
+                Fetching list of companies
+              </Typography>
+            </Stack>
+          </Box>
+        )}
       </Box>
     </Box>
   );

@@ -43,12 +43,9 @@ const Diffc = ({ diffText, title, stat }) => {
 
   return (
     <Container maxWidth={false} disableGutters={true}>
-      <Box px={3} pb={1}>
+      <Box py={1}>
         <Card raised={true}>
-          <CardHeader
-            title={title}
-            subheader={dateTime.toLocaleString()}
-          />
+          <CardHeader title={title} subheader={dateTime.toLocaleString()} />
           {diffText ? (
             <>
               <CardActions>
