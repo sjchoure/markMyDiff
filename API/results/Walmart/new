@@ -1,0 +1,597 @@
+< section class = "search-page search-page--results search--updating"
+data - component = "search" > < div class = "search-page__layout container" > < div class = "search" > < h1 tabindex = "0"
+class = "search__title" > Find the right job
+for you. < /h1>    <div class="search-bar"> <button class="button--close"></button > < form class = "grid"
+action = "/results"
+method = "get"
+data - search - type = "jobs"
+data - number - results - per - page = "25"
+data - number - lines - of - pills = "2"
+data - max - char - of - pills = "35" > < label
+for = "search"
+class = "eyebrow search-bar__label" > Search Jobs < /label><div class="search-bar__wrap grid-item">  <div class="search-bar__category__wrap" ><div class="search-bar__category" data-component="accordion" data-accordion-select="true"> <span class="button" tabindex="0" role="button" data-toggle="#categories"><span class="search-bar__category-current" id="category_current"> All Career Areas</span > < /span><div class="accordion__target" id="categories"> <div class="form-item form-item--radio"> <input id="category0" type="radio" aria-hidden="true" name="jobCareerArea"  checked=""   value="all"  data-category="All Career Areas" data-job-departments=""> <label for="category0" role="button" tabindex="0" class="form-item__label"><span>All Career Areas</span > < /label></div > < div class = "form-item form-item--radio" > < input id = "category1"
+type = "radio"
+aria - hidden = "true"
+name = "jobCareerArea"
+value = "00000159-7585-d286-a3f9-7fa533590000"
+data - category = "Stores &amp; Clubs"
+data - job - departments = "00000159-75b1-d2b4-abdd-f5b7956d0000,00000159-75b2-d2b4-abdd-f5b783970000,00000159-d7d6-d85c-a7f9-f7de79b80000,00000159-dbd6-d85c-a7f9-ffde4ee10000,0000016a-8ad2-defc-a3ee-8afeb1590000" > < label
+for = "category1"
+role = "button"
+tabindex = "0"
+class = "form-item__label" > < span > Stores & amp;
+Clubs < /span></label > < /div> <div class="form-item form-item--radio"> <input id="category2" type="radio" aria-hidden="true" name="jobCareerArea"   value="00000159-7574-d286-a3f9-7ff45f640000"  data-category="Corporate" data-job-departments="00000159-7597-d2b4-abdd-f5b79c9d0000,00000159-759e-d286-a3f9-7fbe44710000,00000159-759f-d286-a3f9-7fbf0f6d0000,00000159-759f-d2b4-abdd-f5bfa22d0000,00000159-75a1-d286-a3f9-7fa114fa0000,00000159-75a1-d286-a3f9-7fa1c43c0000,00000159-75a2-d286-a3f9-7fa2bac60000,00000159-75a3-d286-a3f9-7fa3cf810000,00000159-75a3-d2b4-abdd-f5a734fa0000,00000159-75a4-d286-a3f9-7fa4503d0000,00000159-75a5-d2b4-abdd-f5a758f40000,00000159-75a6-d2b4-abdd-f5a7fdd80000,00000159-75a7-d286-a3f9-7fa7a04f0000,00000159-75a8-d286-a3f9-7fa8f5c00000,00000159-75a8-d2b4-abdd-f5af3e670000,00000159-75a9-d286-a3f9-7fa9c9e30000,00000159-7627-d286-a3f9-7ea7d10c0000,0000015e-f1eb-d841-a15f-f7eb14100000,00000161-8bda-d3dd-a1fd-bbda62130000,0000016a-b73e-defc-a3ee-bf3e29ce0000,0000017b-11e6-d257-afff-33f6155f0000"> <label for="category2" role="button" tabindex="0" class="form-item__label"><span>Corporate</span > < /label></div > < div class = "form-item form-item--radio" > < input id = "category3"
+type = "radio"
+aria - hidden = "true"
+name = "jobCareerArea"
+value = "00000159-758d-d286-a3f9-7fad37a00000"
+data - category = "Healthcare"
+data - job - departments = "00000159-75ab-d286-a3f9-7fabd46a0000,00000159-75ad-d2b4-abdd-f5af5fc70000,00000159-75ae-d286-a3f9-7fae6a2e0000,00000161-588c-dc3b-a7ed-5cff3aba0000,0000016b-fc33-defc-a3ef-fc3f62b80000" > < label
+for = "category3"
+role = "button"
+tabindex = "0"
+class = "form-item__label" > < span > Healthcare < /span></label > < /div> <div class="form-item form-item--radio"> <input id="category4" type="radio" aria-hidden="true" name="jobCareerArea"   value="0000015e-b97d-d143-af5e-bd7da8ca0000"  data-category="Technology" data-job-departments="00000161-7bad-da32-a37b-fbef5e390000,00000161-7bf4-da32-a37b-fbf7c59e0000,00000161-7bfd-da32-a37b-fbff3a4a0000,00000161-7bff-da32-a37b-fbffc8c10000,00000161-8bd0-d3dd-a1fd-bbd0febc0000,00000161-8be6-da32-a37b-cbe70c150000"> <label for="category4" role="button" tabindex="0" class="form-item__label"><span>Technology</span > < /label></div > < div class = "form-item form-item--radio" > < input id = "category5"
+type = "radio"
+aria - hidden = "true"
+name = "jobCareerArea"
+value = "00000159-7589-d286-a3f9-7fa968750000"
+data - category = "Drivers &amp; Distribution Centers"
+data - job - departments = "00000159-75b0-d286-a3f9-7fb0c1480000,00000159-d7f5-d85c-a7f9-f7ff7b3d0000,00000181-15a2-ddd8-a185-9df71ebf0000" > < label
+for = "category5"
+role = "button"
+tabindex = "0"
+class = "form-item__label" > < span > Drivers & amp;
+Distribution Centers < /span></label > < /div> </div > < /div></div > < div class = "search-bar__query" > < input placeholder = "Search job title or keyword"
+type = "text"
+name = "q"
+class = "input search-bar__input"
+autocapitalize = "none"
+autocorrect = "none"
+autocomplete = "off"
+aria - label = "Search input"
+data - component = "autocomplete"
+id = "search" > < script id = "search-autocomplete"
+type = "text/x-template" >
+    <
+    div class = "autocomplete__category" >
+    <
+    h3 class = "eyebrow" > {
+        {
+            title
+        }
+    } < /h3> <
+    ul > {
+        {
+            # items
+        }
+    } <
+    li class = "autocomplete__item" >
+    <
+    a tabindex = "0"
+href = "/results?q={{ name }}&amp;ref=search-suggestion" > {
+        {
+            name
+        }
+    } <
+    /a> <
+    /li> {
+        {
+            / items }} <
+            /ul> <
+            /div> <
+            /script><div id="autocomplete" class="autocomplete"></div > < /div> <div class="search-bar__location"> <input placeholder="All Locations" type="text" name="location" class="input search-bar__location__input" autocapitalize="none" autocorrect="none" autocomplete="off" aria-label="Location" data-component="locationAutocomplete" id="location"> <span class="search-bar__location__focus">Start typing city and state</span > < span class = "search-bar__location__btn" > < svg class = "search-bar__location__icon icon" > < use xlink: href = "/sprite.svg#pin" > < /use></svg > < /span> <script id="search-location-autocomplete" type="text/x - template "> <
+                div class = "locationAutocomplete__category" >
+                <
+                h3 class = "eyebrow" > Select a City / State < /h3> <
+                ul id = "search-location-list" > {
+                    {
+                        # results
+                    }
+                } <
+                li class = "autocomplete__item" >
+                <
+                span tabindex = "0"
+            role = "button"
+            class = "link"
+            data - lat = "{{ lat }}"
+            data - lon = "{{ long }}" > {
+                    {
+                        # city
+                    }
+                } {
+                    {
+                        city
+                    }
+                }, {
+                    {
+                        / city }}{{ state }}</span >
+                        <
+                        /li> {
+                            {
+                                / results }} {
+                                    {
+                                        ^ results
+                                    }
+                                } < li class = "autocomplete__item" > No matches found < /li>{{/
+                                results
+                            }
+                        } <
+                        /ul> <
+                        /div> <
+                        /script><div id="locationAutocomplete" class="locationAutocomplete"><div class="locationAutocomplete__userlocation"><h3 tabindex="0" class="locationAutocomplete__userlocation__title">Use my location</h3 > < span tabindex = "0"
+                        role = "button"
+                        class = "locationAutocomplete__userlocation__location" > < svg aria - hidden = "true"
+                        class = "locationAutocomplete__userlocation__icon icon" > < use xlink: href = "/sprite.svg#pin" > < /use></svg > < span class = "userlocation" > All Locations < /span></span > < /div><div class="locationAutocomplete__nolocation"><h3 tabindex="0" class="locationAutocomplete__nolocation__title"> <img src="/assets / warning.png " aria-hidden><span>Cannot determine location</span></h3> <span class="
+                        locationAutocomplete__nolocation__blurb ">Verify that location services are enabled on your mobile device or web browser.</span></div><div class="
+                        locationAutocomplete__results "></div></div></div>  </div><div class="
+                        search - bar__button grid - item grid--no - gutter "> <button class="
+                        button button--yellow " aria-label="
+                        Search " type="
+                        submit "> <span>Search</span> <svg class="
+                        search - bar__icon icon "><use xlink:href=" / sprite.svg #magnifier "></use></svg></button></div> <input type="
+                        hidden " name="
+                        ref " value="
+                        manual "> <input type="
+                        hidden " name="
+                        origin " value="
+                        search "> </form></div> <div class="
+                        search__filtertoolbar "><div class="
+                        search__filtertoolbar__inner "> <button class="
+                        button button--inverted filter__toggle "> <span class="
+                        showpanel ">+ Show Filters</span> <span class="
+                        hidepanel ">- Hide Filters</span></button><div class="
+                        search__sort "> <span class="
+                        eyebrow " tabindex="
+                        0 " role="
+                        heading ">Sort by</span><div class="
+                        search__sort__list "> <div class="
+                        search__sort__item "> <input type="
+                        radio " name="
+                        sort " class="
+                        search__sort__option "  id="
+                        sortRadio0 " value="
+                        rank " aria-label="
+                        sort by Best Match ">  <label for="
+                        sortRadio0 "  tabindex="
+                        0 " role="
+                        button " class="
+                        search__sort__option__label ">Best Match</label> </div> <div class="
+                        search__sort__item "> <input type="
+                        radio " name="
+                        sort " class="
+                        search__sort__option "  checked  id="
+                        sortRadio1 " value="
+                        date " aria-label="
+                        sort by Date "> <input type="
+                        checkbox " name="
+                        dateAsc " class="
+                        search__sort__asc " id="
+                        sortdateAsc " value="
+                        dateAsc " aria-label="
+                        sort by Date ascending "> <label for="
+                        sortRadio1 "  title="
+                        Job Post Date "  tabindex="
+                        0 " role="
+                        button " class="
+                        search__sort__option__label ">Date</label> <label tabindex="
+                        0 " role="
+                        button " for="
+                        sortdateAsc " class="
+                        search__sort__asc__label "></label></div> </div></div></div></div><div class="
+                        search__content "> <div class="
+                        filter accordion " data-component="
+                        accordion "><div class="
+                        filter__display "> <button class="
+                        button button--basic filter__toggle " aria-label="
+                        See result ">Apply Filters</button> <button class="
+                        button button--close filter__toggle " aria-label="
+                        Close filters "></button></div> <div class="
+                        filter__wrap ">   <div class="
+                        filter__section "><h3 class="
+                        filter__title toggle--active " data-toggle="
+                        #department - accordion " data-gtm="
+                        expand filter " role="
+                        button " tabindex="
+                        0 ">Career Areas<small class="
+                        counter " id="
+                        career_filter_counter "></small></h3><div class="
+                        collapse in accordion--active " id="
+                        department - accordion "><div class="
+                        filter__department filter__pad ">  <div class="
+                        filter__div - area "><h6 class="
+                        eyebrow filter__sub - title no - filters " data-toggle="
+                        #subfilter - 00000159 - 7585 - d286 - a3f9 - 7 fa533590000 " data-gtm="
+                        expand filter " role="
+                        button " tabindex="
+                        0 ">Stores &amp; Clubs</h6><div class="
+                        accordion__target " id="
+                        subfilter - 00000159 - 7585 - d286 - a3f9 - 7 fa533590000 "> </div></div> <div class="
+                        filter__div - area "><h6 class="
+                        eyebrow filter__sub - title " data-toggle="
+                        #subfilter - 00000159 - 7589 - d286 - a3f9 - 7 fa968750000 " data-gtm="
+                        expand filter " role="
+                        button " tabindex="
+                        0 ">Distribution, Fulfillment, &amp; Drivers</h6><div class="
+                        accordion__target " id="
+                        subfilter - 00000159 - 7589 - d286 - a3f9 - 7 fa968750000 "> <div class="
+                        form - item form - item--checkbox "> <input id="
+                        dep - 10 " type="
+                        checkbox " name="
+                        jobCategory " data-filter="
+                        jobCategory " data-label="
+                        Distribution and Fulfillment Centers(143)
+                        " value="
+                        00000159 - d7f5 - d85c - a7f9 - f7ff7b3d0000 " data-alternative-value="
+                        " > <label for="
+                        dep - 10 " class="
+                        form - item__label "><span>Distribution and Fulfillment Centers (143)</span></label> </div> <div class="
+                        form - item form - item--checkbox "> <input id="
+                        dep - 11 " type="
+                        checkbox " name="
+                        jobCategory " data-filter="
+                        jobCategory " data-label="
+                        Fleet Maintenance(1)
+                        " value="
+                        00000181 - 15 a2 - ddd8 - a185 - 9 df71ebf0000 " data-alternative-value="
+                        " > <label for="
+                        dep - 11 " class="
+                        form - item__label "><span>Fleet Maintenance (1)</span></label> </div> </div></div> <div class="
+                        filter__div - area "><h6 class="
+                        eyebrow filter__sub - title no - filters " data-toggle="
+                        #subfilter - 00000159 - 758 d - d286 - a3f9 - 7 fad37a00000 " data-gtm="
+                        expand filter " role="
+                        button " tabindex="
+                        0 ">Healthcare</h6><div class="
+                        accordion__target " id="
+                        subfilter - 00000159 - 758 d - d286 - a3f9 - 7 fad37a00000 "> </div></div> <div class="
+                        filter__div - area "><h6 class="
+                        eyebrow filter__sub - title " data-toggle="
+                        #subfilter - 0000015 e - b97d - d143 - af5e - bd7da8ca0000 " data-gtm="
+                        expand filter " role="
+                        button " tabindex="
+                        0 ">Technology</h6><div class="
+                        accordion__target " id="
+                        subfilter - 0000015 e - b97d - d143 - af5e - bd7da8ca0000 "> <div class="
+                        form - item form - item--checkbox "> <input id="
+                        dep - 30 " type="
+                        checkbox " name="
+                        jobCategory " data-filter="
+                        jobCategory " data-label="
+                        Data Science and Analytics(34)
+                        " value="
+                        00000161 - 7 bad - da32 - a37b - fbef5e390000 " data-alternative-value="
+                        " > <label for="
+                        dep - 30 " class="
+                        form - item__label "><span>Data Science and Analytics (34)</span></label> </div> <div class="
+                        form - item form - item--checkbox "> <input id="
+                        dep - 31 " type="
+                        checkbox " name="
+                        jobCategory " data-filter="
+                        jobCategory " data-label="
+                        Software Development and Engineering(800)
+                        " value="
+                        00000161 - 7 bf4 - da32 - a37b - fbf7c59e0000 " data-alternative-value="
+                        " > <label for="
+                        dep - 31 " class="
+                        form - item__label "><span>Software Development and Engineering (800)</span></label> </div> <div class="
+                        form - item form - item--checkbox "> <input id="
+                        dep - 32 " type="
+                        checkbox " name="
+                        jobCategory " data-filter="
+                        jobCategory " data-label="
+                        Cybersecurity(16)
+                        " value="
+                        00000161 - 7 bff - da32 - a37b - fbffc8c10000 " data-alternative-value="
+                        " > <label for="
+                        dep - 32 " class="
+                        form - item__label "><span>Cybersecurity (16)</span></label> </div> <div class="
+                        form - item form - item--checkbox "> <input id="
+                        dep - 33 " type="
+                        checkbox " name="
+                        jobCategory " data-filter="
+                        jobCategory " data-label="
+                        Information Technology(3)
+                        " value="
+                        00000161 - 8 bd0 - d3dd - a1fd - bbd0febc0000 " data-alternative-value="
+                        " > <label for="
+                        dep - 33 " class="
+                        form - item__label "><span>Information Technology (3)</span></label> </div> <div class="
+                        form - item form - item--checkbox nested - checkbox__wrapper "> <input id="
+                        dep - 34 " type="
+                        checkbox " name="
+                        jobCategory " data-filter="
+                        jobCategory " data-label="
+                        Project and Program Management - Technology(9)
+                        " value="
+                        00000161 - 8 be6 - da32 - a37b - cbe70c150000 " data-alternative-value="
+                        " > <label for="
+                        dep - 34 " class="
+                        form - item__label "><span>Project and Program Management - Technology (9)</span></label>  <button class="
+                        accordion__toggle " data-toggle="
+                        #nestedfilter - 00000161 - 8 be6 - da32 - a37b - cbe70c150000 " tabindex="
+                        0 " data-gtm="
+                        expand filter " aria-label="
+                        nested filters
+                        for 'Project and Program Management - Technology (9)'
+                        area " role="
+                        button "></button><div class="
+                        accordion__target nested - checkbox__list " id="
+                        nestedfilter - 00000161 - 8 be6 - da32 - a37b - cbe70c150000 "> <div class="
+                        form - item form - item--checkbox "> <input id="
+                        nest - 0000015 a - a577 - de75 - a9ff - bdff284e0000 " type="
+                        checkbox " name="
+                        jobSubCategory " data-filter="
+                        jobSubCategory " data-label="
+                        Project and Program Management– Technology(9)
+                        " value="
+                        0000015 a - a577 - de75 - a9ff - bdff284e0000 " data-alternative-value="
+                        " > <label for="
+                        nest - 0000015 a - a577 - de75 - a9ff - bdff284e0000 " class="
+                        form - item__label "><span>Project and Program Management – Technology (9)</span></label></div> </div> </div> </div></div> <div class="
+                        filter__div - area "><h6 class="
+                        eyebrow filter__sub - title " data-toggle="
+                        #subfilter - 00000159 - 7574 - d286 - a3f9 - 7 ff45f640000 " data-gtm="
+                        expand filter " role="
+                        button " tabindex="
+                        0 ">Corporate</h6><div class="
+                        accordion__target " id="
+                        subfilter - 00000159 - 7574 - d286 - a3f9 - 7 ff45f640000 "> <div class="
+                        form - item form - item--checkbox "> <input id="
+                        dep - 40 " type="
+                        checkbox " name="
+                        jobCategory " data-filter="
+                        jobCategory " data-label="
+                        Customer Service and Call Center(5)
+                        " value="
+                        00000159 - 75 a1 - d286 - a3f9 - 7 fa1c43c0000 " data-alternative-value="
+                        " > <label for="
+                        dep - 40 " class="
+                        form - item__label "><span>Customer Service and Call Center (5)</span></label> </div> <div class="
+                        form - item form - item--checkbox "> <input id="
+                        dep - 41 " type="
+                        checkbox " name="
+                        jobCategory " data-filter="
+                        jobCategory " data-label="
+                        Engineering(1)
+                        " value="
+                        00000159 - 75 a2 - d286 - a3f9 - 7 fa2bac60000 " data-alternative-value="
+                        " > <label for="
+                        dep - 41 " class="
+                        form - item__label "><span>Engineering (1)</span></label> </div> <div class="
+                        form - item form - item--checkbox "> <input id="
+                        dep - 42 " type="
+                        checkbox " name="
+                        jobCategory " data-filter="
+                        jobCategory " data-label="
+                        Installation, Maintenance and Utilities(2)
+                        " value="
+                        00000159 - 75 a4 - d286 - a3f9 - 7 fa4503d0000 " data-alternative-value="
+                        " > <label for="
+                        dep - 42 " class="
+                        form - item__label "><span>Installation, Maintenance and Utilities (2)</span></label> </div> <div class="
+                        form - item form - item--checkbox nested - checkbox__wrapper "> <input id="
+                        dep - 43 " type="
+                        checkbox " name="
+                        jobCategory " data-filter="
+                        jobCategory " data-label="
+                        Legal(1)
+                        " value="
+                        00000159 - 75 a5 - d2b4 - abdd - f5a758f40000 " data-alternative-value="
+                        " > <label for="
+                        dep - 43 " class="
+                        form - item__label "><span>Legal (1)</span></label>  <button class="
+                        accordion__toggle " data-toggle="
+                        #nestedfilter - 00000159 - 75 a5 - d2b4 - abdd - f5a758f40000 " tabindex="
+                        0 " data-gtm="
+                        expand filter " aria-label="
+                        nested filters
+                        for 'Legal (1)'
+                        area " role="
+                        button "></button><div class="
+                        accordion__target nested - checkbox__list " id="
+                        nestedfilter - 00000159 - 75 a5 - d2b4 - abdd - f5a758f40000 "> <div class="
+                        form - item form - item--checkbox "> <input id="
+                        nest - 0000015 a - a52e - d06d - af5f - f5bf8ae90000 " type="
+                        checkbox " name="
+                        jobSubCategory " data-filter="
+                        jobSubCategory " data-label="
+                        Legal(1)
+                        " value="
+                        0000015 a - a52e - d06d - af5f - f5bf8ae90000 " data-alternative-value="
+                        " > <label for="
+                        nest - 0000015 a - a52e - d06d - af5f - f5bf8ae90000 " class="
+                        form - item__label "><span>Legal (1)</span></label></div> </div> </div> <div class="
+                        form - item form - item--checkbox "> <input id="
+                        dep - 44 " type="
+                        checkbox " name="
+                        jobCategory " data-filter="
+                        jobCategory " data-label="
+                        Marketing and Customer Insights(1)
+                        " value="
+                        00000159 - 75 a6 - d2b4 - abdd - f5a7fdd80000 " data-alternative-value="
+                        " > <label for="
+                        dep - 44 " class="
+                        form - item__label "><span>Marketing and Customer Insights (1)</span></label> </div> <div class="
+                        form - item form - item--checkbox nested - checkbox__wrapper "> <input id="
+                        dep - 45 " type="
+                        checkbox " name="
+                        jobCategory " data-filter="
+                        jobCategory " data-label="
+                        Real Estate, Construction and Realty Execution(13)
+                        " value="
+                        00000159 - 75 a8 - d286 - a3f9 - 7 fa8f5c00000 " data-alternative-value="
+                        " > <label for="
+                        dep - 45 " class="
+                        form - item__label "><span>Real Estate, Construction and Realty Execution (13)</span></label>  <button class="
+                        accordion__toggle " data-toggle="
+                        #nestedfilter - 00000159 - 75 a8 - d286 - a3f9 - 7 fa8f5c00000 " tabindex="
+                        0 " data-gtm="
+                        expand filter " aria-label="
+                        nested filters
+                        for 'Real Estate, Construction and Realty Execution (13)'
+                        area " role="
+                        button "></button><div class="
+                        accordion__target nested - checkbox__list " id="
+                        nestedfilter - 00000159 - 75 a8 - d286 - a3f9 - 7 fa8f5c00000 "> <div class="
+                        form - item form - item--checkbox "> <input id="
+                        nest - 0000015 a - a576 - de75 - a9ff - bdfe02bc0000 " type="
+                        checkbox " name="
+                        jobSubCategory " data-filter="
+                        jobSubCategory " data-label="
+                        Real Estate, Construction and Store Planning(13)
+                        " value="
+                        0000015 a - a576 - de75 - a9ff - bdfe02bc0000 " data-alternative-value="
+                        " > <label for="
+                        nest - 0000015 a - a576 - de75 - a9ff - bdfe02bc0000 " class="
+                        form - item__label "><span>Real Estate, Construction and Store Planning (13)</span></label></div> </div> </div> <div class="
+                        form - item form - item--checkbox nested - checkbox__wrapper "> <input id="
+                        dep - 46 " type="
+                        checkbox " name="
+                        jobCategory " data-filter="
+                        jobCategory " data-label="
+                        Supply Chain and Logistics(1)
+                        " value="
+                        00000159 - 75 a9 - d286 - a3f9 - 7 fa9c9e30000 " data-alternative-value="
+                        " > <label for="
+                        dep - 46 " class="
+                        form - item__label "><span>Supply Chain and Logistics (1)</span></label>  <button class="
+                        accordion__toggle " data-toggle="
+                        #nestedfilter - 00000159 - 75 a9 - d286 - a3f9 - 7 fa9c9e30000 " tabindex="
+                        0 " data-gtm="
+                        expand filter " aria-label="
+                        nested filters
+                        for 'Supply Chain and Logistics (1)'
+                        area " role="
+                        button "></button><div class="
+                        accordion__target nested - checkbox__list " id="
+                        nestedfilter - 00000159 - 75 a9 - d286 - a3f9 - 7 fa9c9e30000 "> <div class="
+                        form - item form - item--checkbox "> <input id="
+                        nest - 0000015 a - a576 - de75 - a9ff - bdfea6260000 " type="
+                        checkbox " name="
+                        jobSubCategory " data-filter="
+                        jobSubCategory " data-label="
+                        Supply Chain and Logistics(1)
+                        " value="
+                        0000015 a - a576 - de75 - a9ff - bdfea6260000 " data-alternative-value="
+                        " > <label for="
+                        nest - 0000015 a - a576 - de75 - a9ff - bdfea6260000 " class="
+                        form - item__label "><span>Supply Chain and Logistics (1)</span></label></div> </div> </div> <div class="
+                        form - item form - item--checkbox "> <input id="
+                        dep - 47 " type="
+                        checkbox " name="
+                        jobCategory " data-filter="
+                        jobCategory " data-label="
+                        Data Analytics and Business Intelligence(9)
+                        " value="
+                        00000159 - 7627 - d286 - a3f9 - 7 ea7d10c0000 " data-alternative-value="
+                        " > <label for="
+                        dep - 47 " class="
+                        form - item__label "><span>Data Analytics and Business Intelligence (9)</span></label> </div> <div class="
+                        form - item form - item--checkbox "> <input id="
+                        dep - 48 " type="
+                        checkbox " name="
+                        jobCategory " data-filter="
+                        jobCategory " data-label="
+                        Business Operations(5)
+                        " value="
+                        0000015 e - f1eb - d841 - a15f - f7eb14100000 " data-alternative-value="
+                        " > <label for="
+                        dep - 48 " class="
+                        form - item__label "><span>Business Operations (5)</span></label> </div> <div class="
+                        form - item form - item--checkbox nested - checkbox__wrapper "> <input id="
+                        dep - 49 " type="
+                        checkbox " name="
+                        jobCategory " data-filter="
+                        jobCategory " data-label="
+                        Product Management(41)
+                        " value="
+                        00000161 - 8 bda - d3dd - a1fd - bbda62130000 " data-alternative-value="
+                        " > <label for="
+                        dep - 49 " class="
+                        form - item__label "><span>Product Management (41)</span></label>  <button class="
+                        accordion__toggle " data-toggle="
+                        #nestedfilter - 00000161 - 8 bda - d3dd - a1fd - bbda62130000 " tabindex="
+                        0 " data-gtm="
+                        expand filter " aria-label="
+                        nested filters
+                        for 'Product Management (41)'
+                        area " role="
+                        button "></button><div class="
+                        accordion__target nested - checkbox__list " id="
+                        nestedfilter - 00000161 - 8 bda - d3dd - a1fd - bbda62130000 "> <div class="
+                        form - item form - item--checkbox "> <input id="
+                        nest - 0000015 a - a52a - d06d - af5f - f5bb487e0000 " type="
+                        checkbox " name="
+                        jobSubCategory " data-filter="
+                        jobSubCategory " data-label="
+                        Product Management - Technology(41)
+                        " value="
+                        0000015 a - a52a - d06d - af5f - f5bb487e0000 " data-alternative-value="
+                        " > <label for="
+                        nest - 0000015 a - a52a - d06d - af5f - f5bb487e0000 " class="
+                        form - item__label "><span>Product Management - Technology (41)</span></label></div> </div> </div> </div></div>  </div></div></div>  <div class="
+                        filter__section "><h3 class="
+                        filter__title toggle--active " data-toggle="
+                        #brand - accordion " data-gtm="
+                        expand filter " aria-expanded="
+                        true " role="
+                        button " tabindex="
+                        0 ">Brand<small class="
+                        counter " id="
+                        brand_filter_counter "></small></h3><div class="
+                        collapse in accordion--active " id="
+                        brand - accordion "><div class="
+                        filter__rate filter__pad ">   <div class="
+                        form - item form - item--checkbox "> <input id="
+                        bra - 00 " type="
+                        checkbox " name="
+                        jobBrand " data-filter="
+                        jobBrand " data-label="
+                        Walmart(998)
+                        " value="
+                        0000015 a - 7 fb5 - dbfd - a35a - ffff665a0000 " data-alternative-value="
+                        " > <label for="
+                        bra - 00 " tabindex="
+                        0 " class="
+                        form - item__label "><span><img src="
+                        https: //walmart-careers.scdn3.secure.raxcdn.com/5b/26/353d67fd47178398b13845534caa/walmart.png" aria-hidden="true" title="Walmart (998) logo">Walmart (998)</span></label></div> <div class="form-item form-item--checkbox"> <input id="bra-01" type="checkbox" name="jobBrand" data-filter="jobBrand" data-label="Sam&#x27;s Club (82)" value="0000015a-624c-d7d3-afff-76ec4e230000" data-alternative-value="" > <label for="bra-01" tabindex="0" class="form-item__label"><span><img src="https://walmart-careers.scdn3.secure.raxcdn.com/8d/1c/7a6bf42c4d32940c03bcc8546d4f/samslogo.svg.svg" aria-hidden="true" title="Sam&#x27;s Club (82) logo">Sam&#x27;s Club (82)</span></label></div> <div class="form-item form-item--checkbox"> <input id="bra-02" type="checkbox" name="jobBrand" data-filter="jobBrand" data-label="Bonobos (1)" value="00000164-b44e-d730-a967-ffde90810000" data-alternative-value="" > <label for="bra-02" tabindex="0" class="form-item__label"><span><img src="https://walmart-careers.scdn3.secure.raxcdn.com/3c/39/52bc7b1f4836858ca9a1161fefaa/bonobos-fav.ico" aria-hidden="true" title="Bonobos (1) logo">Bonobos (1)</span></label></div> <div class="form-item form-item--checkbox"> <input id="bra-03" type="checkbox" name="jobBrand" data-filter="jobBrand" data-label="Hayneedle (0)" value="00000164-b3f5-d730-a967-fbff14a10000" data-alternative-value="" > <label for="bra-03" tabindex="0" class="form-item__label"><span><img src="https://walmart-careers.scdn3.secure.raxcdn.com/2b/19/021d559242c198881716db2844e1/hayneedle-fav.ico" aria-hidden="true" title="Hayneedle (0) logo">Hayneedle (0)</span></label></div> <div class="form-item form-item--checkbox"> <input id="bra-04" type="checkbox" name="jobBrand" data-filter="jobBrand" data-label="Moosejaw (0)" value="00000164-b44a-d730-a967-ffda063e0000" data-alternative-value="" > <label for="bra-04" tabindex="0" class="form-item__label"><span><img src="https://walmart-careers.scdn3.secure.raxcdn.com/98/7f/d2e8c3364e77927ce90988f2ce5a/moosejaw-fav.ico" aria-hidden="true" title="Moosejaw (0) logo">Moosejaw (0)</span></label></div> <div class="form-item form-item--checkbox"> <input id="bra-05" type="checkbox" name="jobBrand" data-filter="jobBrand" data-label="Art.com (0)" value="00000172-a4b4-de54-a373-f5bec6e40000" data-alternative-value="" > <label for="bra-05" tabindex="0" class="form-item__label"><span><img src="https://walmart-careers.scdn3.secure.raxcdn.com/d6/4e/30d1f5934fd1b50d7bacbb0945ab/artlogo-black-100x100-ico.ico" aria-hidden="true" title="Art.com (0) logo">Art.com (0)</span></label></div> <div class="form-item form-item--checkbox"> <input id="bra-06" type="checkbox" name="jobBrand" data-filter="jobBrand" data-label="ELOQUII (0)" value="00000172-a4ba-dd21-ab7b-fcbab1810000" data-alternative-value="" > <label for="bra-06" tabindex="0" class="form-item__label"><span><img src="https://walmart-careers.scdn3.secure.raxcdn.com/99/aa/63925b544319aa39f066f49b2cb0/e-favicon-100x100-ico.ico" aria-hidden="true" title="ELOQUII (0) logo">ELOQUII (0)</span></label></div> <div class="form-item form-item--checkbox"> <input id="bra-07" type="checkbox" name="jobBrand" data-filter="jobBrand" data-label="Store No. 8 (4)" value="00000164-b453-d730-a967-ffdb4c610000" data-alternative-value="" > <label for="bra-07" tabindex="0" class="form-item__label"><span><img src="https://walmart-careers.scdn3.secure.raxcdn.com/49/8f/4617d51b44c7b62ba708d205f98e/storeno8-fav.ico" aria-hidden="true" title="Store No. 8 (4) logo">Store No. 8 (4)</span></label></div>    </div></div></div>  <div class="filter__section"><h3 class="filter__title toggle--active " data-toggle="#type-accordion" data-gtm="expand filter" role="button" tabindex="0">Employment Type<small class="counter" id="type_filter_counter"></small></h3><div class="collapse in  accordion--active " id="type-accordion"><div class="filter__type filter__pad">  <div class="form-item form-item--checkbox"> <input id="typ-0" type="checkbox" name="jobEmploymentType" data-filter="jobEmploymentType" data-label="Full Time (1083)" value="0000015a-721c-dcbc-afda-779e92ad0000"  checked > <label for="typ-0" class="form-item__label"><span>Full Time (1083)</span></label></div> <div class="form-item form-item--checkbox"> <input id="typ-1" type="checkbox" name="jobEmploymentType" data-filter="jobEmploymentType" data-label="Part Time (0)" value="0000015a-721e-dcbc-afda-779e5a430000" > <label for="typ-1" class="form-item__label"><span>Part Time (0)</span></label></div> <div class="form-item form-item--checkbox"> <input id="typ-2" type="checkbox" name="jobEmploymentType" data-filter="jobEmploymentType" data-label="Temporary (0)" value="0000015a-721d-de53-ab7e-767ff1d80000" > <label for="typ-2" class="form-item__label"><span>Temporary (0)</span></label></div> <div class="form-item form-item--checkbox"> <input id="typ-3" type="checkbox" name="jobEmploymentType" data-filter="jobEmploymentType" data-label="Internship (0)" value="0000015a-721c-de53-ab7e-767e668d0000" > <label for="typ-3" class="form-item__label"><span>Internship (0)</span></label></div>  </div></div></div>  <div class="filter__section"><h3 class="filter__title  toggle--active " data-toggle="#rate-accordion" data-gtm="expand filter" role="button" tabindex="0">Rate<small class="counter" id="rate_filter_counter"></small></h3><div class="collapse in  accordion--active " id="rate-accordion"><div class="filter__rate filter__pad">  <div class="form-item form-item--checkbox"> <input id="rat-0" type="checkbox" name="jobRate" data-filter="jobRate" data-label="Salary (934)" value="00000160-6a45-d821-a7fe-6e7fa60f0000" > <label for="rat-0" class="form-item__label"><span>Salary (934)</span></label></div> <div class="form-item form-item--checkbox"> <input id="rat-1" type="checkbox" name="jobRate" data-filter="jobRate" data-label="Hourly (151)" value="00000160-6a45-d7f5-a17a-ffddc6c80000" > <label for="rat-1" class="form-item__label"><span>Hourly (151)</span></label></div>  </div></div></div>  </div></div><div class="search__results__pane"><p class="search__num-results" tabindex="0">Showing &nbsp;<span id="count_results"></span> of <span id="count_totalResults"></span> results</p><div class="filter__pills"><ul class="filter__pills-list"></ul> <button class="button toggle__more" tabindex="0" aria-label="show more pills"><span class="count"></span> more...</button> <button class="button toggle__less" tabindex="0" aria-label="show less pills">less...</button> <button class="button filter__clear" tabindex="0" aria-label="Clear filters">Clear Filters</button></div><div class="search__results">  <ul id="search-results" data-component="accordion" data-total-results="1083">  <li class="search-result job-listing   "><div class="job-listing__headline"><h4 class="job-listing__title"><a class="job-listing__link" href="https://careers.walmart.com/us/jobs/WD1356626-senior-automation-engineer-sams-club">Senior Automation Engineer (Sam's Club)</a></h4> <img aria-hidden="true" src="https://walmart-careers.scdn3.secure.raxcdn.com/8d/1c/7a6bf42c4d32940c03bcc8546d4f/samslogo.svg.svg" class="job-listing-logo"> <span tabindex="0" role="contentinfo" class="job-listing__department eyebrow">Software Development and Engineering</span></div><div class="job-listing__info"> <span tabindex="0" role="contentinfo" class="job-listing__location">WORCESTER, MA</span> <span tabindex="0" role="contentinfo" class="job-listing__created">12/23/22</span></div></li>  <li class="search-result job-listing   "><div class="job-listing__headline"><h4 class="job-listing__title"><a class="job-listing__link" href="https://careers.walmart.com/us/jobs/WD1320538-senior-software-engineer-mobile-android">Senior Software Engineer - Mobile (Android)</a></h4> <img aria-hidden="true" src="https://walmart-careers.scdn3.secure.raxcdn.com/5b/26/353d67fd47178398b13845534caa/walmart.png" class="job-listing-logo"> <span tabindex="0" role="contentinfo" class="job-listing__department eyebrow">Software Development and Engineering</span></div><div class="job-listing__info"> <span tabindex="0" role="contentinfo" class="job-listing__location">SUNNYVALE, CA</span> <span tabindex="0" role="contentinfo" class="job-listing__created">12/23/22</span></div></li>  <li class="search-result job-listing   "><div class="job-listing__headline"><h4 class="job-listing__title"><a class="job-listing__link" href="https://careers.walmart.com/us/jobs/WD1360480-senior-automation-engineer-sams-club">Senior Automation Engineer (Sam's Club)</a></h4> <img aria-hidden="true" src="https://walmart-careers.scdn3.secure.raxcdn.com/8d/1c/7a6bf42c4d32940c03bcc8546d4f/samslogo.svg.svg" class="job-listing-logo"> <span tabindex="0" role="contentinfo" class="job-listing__department eyebrow">Software Development and Engineering</span></div><div class="job-listing__info"> <span tabindex="0" role="contentinfo" class="job-listing__location">MATTESON, IL</span> <span tabindex="0" role="contentinfo" class="job-listing__created">12/23/22</span></div></li>  <li class="search-result job-listing   "><div class="job-listing__headline"><h4 class="job-listing__title"><a class="job-listing__link" href="https://careers.walmart.com/us/jobs/WD1360482-senior-automation-engineer-sams-club">Senior Automation Engineer (Sam's Club)</a></h4> <img aria-hidden="true" src="https://walmart-careers.scdn3.secure.raxcdn.com/8d/1c/7a6bf42c4d32940c03bcc8546d4f/samslogo.svg.svg" class="job-listing-logo"> <span tabindex="0" role="contentinfo" class="job-listing__department eyebrow">Software Development and Engineering</span></div><div class="job-listing__info"> <span tabindex="0" role="contentinfo" class="job-listing__location">LITHIA SPRINGS, GA</span> <span tabindex="0" role="contentinfo" class="job-listing__created">12/23/22</span></div></li>  <li class="search-result job-listing   "><div class="job-listing__headline"><h4 class="job-listing__title"><a class="job-listing__link" href="https://careers.walmart.com/us/jobs/WD1360483-senior-automation-engineer-sams-club">Senior Automation Engineer (Sam's Club)</a></h4> <img aria-hidden="true" src="https://walmart-careers.scdn3.secure.raxcdn.com/8d/1c/7a6bf42c4d32940c03bcc8546d4f/samslogo.svg.svg" class="job-listing-logo"> <span tabindex="0" role="contentinfo" class="job-listing__department eyebrow">Software Development and Engineering</span></div><div class="job-listing__info"> <span tabindex="0" role="contentinfo" class="job-listing__location">BENTONVILLE, AR</span> <span tabindex="0" role="contentinfo" class="job-listing__created">12/23/22</span></div></li>  <li class="search-result job-listing   "><div class="job-listing__headline"><h4 class="job-listing__title"><a class="job-listing__link" href="https://careers.walmart.com/us/jobs/WD1033498-senior-software-engineer-java">Senior Software Engineer Java</a></h4> <img aria-hidden="true" src="https://walmart-careers.scdn3.secure.raxcdn.com/5b/26/353d67fd47178398b13845534caa/walmart.png" class="job-listing-logo"> <span tabindex="0" role="contentinfo" class="job-listing__department eyebrow">Software Development and Engineering</span></div><div class="job-listing__info"> <span tabindex="0" role="contentinfo" class="job-listing__location">SUNNYVALE, CA</span> <span tabindex="0" role="contentinfo" class="job-listing__created">12/23/22</span></div></li>  <li class="search-result job-listing   "><div class="job-listing__headline"><h4 class="job-listing__title"><a class="job-listing__link" href="https://careers.walmart.com/us/jobs/WD1319156-manager-ii-network-engineering">Manager II, Network Engineering</a></h4> <img aria-hidden="true" src="https://walmart-careers.scdn3.secure.raxcdn.com/5b/26/353d67fd47178398b13845534caa/walmart.png" class="job-listing-logo"> <span tabindex="0" role="contentinfo" class="job-listing__department eyebrow">Software Development and Engineering</span></div><div class="job-listing__info"> <span tabindex="0" role="contentinfo" class="job-listing__location">BENTONVILLE, AR</span> <span tabindex="0" role="contentinfo" class="job-listing__created">12/23/22</span></div></li>  <li class="search-result job-listing   "><div class="job-listing__headline"><h4 class="job-listing__title"><a class="job-listing__link" href="https://careers.walmart.com/us/jobs/WD1359038-principal-designer-us">Principal Designer (US)</a></h4> <img aria-hidden="true" src="https://walmart-careers.scdn3.secure.raxcdn.com/5b/26/353d67fd47178398b13845534caa/walmart.png" class="job-listing-logo"> <span tabindex="0" role="contentinfo" class="job-listing__department eyebrow">Software Development and Engineering</span></div><div class="job-listing__info"> <span tabindex="0" role="contentinfo" class="job-listing__location">HOBOKEN, NJ</span> <span tabindex="0" role="contentinfo" class="job-listing__created">12/22/22</span></div></li>  <li class="search-result job-listing   "><div class="job-listing__headline"><h4 class="job-listing__title"><a class="job-listing__link" href="https://careers.walmart.com/us/jobs/WD1335962-usa-staff-data-engineer">(USA) Staff Data Engineer</a></h4> <img aria-hidden="true" src="https://walmart-careers.scdn3.secure.raxcdn.com/5b/26/353d67fd47178398b13845534caa/walmart.png" class="job-listing-logo"> <span tabindex="0" role="contentinfo" class="job-listing__department eyebrow">Software Development and Engineering</span></div><div class="job-listing__info"> <span tabindex="0" role="contentinfo" class="job-listing__location">HOBOKEN, NJ</span> <span tabindex="0" role="contentinfo" class="job-listing__created">12/22/22</span></div></li>  <li class="search-result job-listing   "><div class="job-listing__headline"><h4 class="job-listing__title"><a class="job-listing__link" href="https://careers.walmart.com/us/jobs/WD1342801-software-engineer-iii">Software Engineer III</a></h4> <img aria-hidden="true" src="https://walmart-careers.scdn3.secure.raxcdn.com/5b/26/353d67fd47178398b13845534caa/walmart.png" class="job-listing-logo"> <span tabindex="0" role="contentinfo" class="job-listing__department eyebrow">Software Development and Engineering</span></div><div class="job-listing__info"> <span tabindex="0" role="contentinfo" class="job-listing__location">SUNNYVALE, CA</span> <span tabindex="0" role="contentinfo" class="job-listing__created">12/22/22</span></div></li>  <li class="search-result job-listing   "><div class="job-listing__headline"><h4 class="job-listing__title"><a class="job-listing__link" href="https://careers.walmart.com/us/jobs/WD1328236-usa-manager-ii-product-management">(USA) Manager II, Product Management</a></h4> <img aria-hidden="true" src="https://walmart-careers.scdn3.secure.raxcdn.com/5b/26/353d67fd47178398b13845534caa/walmart.png" class="job-listing-logo"> <span tabindex="0" role="contentinfo" class="job-listing__department eyebrow">Product Management</span></div><div class="job-listing__info"> <span tabindex="0" role="contentinfo" class="job-listing__location">HOBOKEN, NJ</span> <span tabindex="0" role="contentinfo" class="job-listing__created">12/22/22</span></div></li>  <li class="search-result job-listing   "><div class="job-listing__headline"><h4 class="job-listing__title"><a class="job-listing__link" href="https://careers.walmart.com/us/jobs/WD1328230-usa-principal-product-manager">(USA) Principal Product Manager</a></h4> <img aria-hidden="true" src="https://walmart-careers.scdn3.secure.raxcdn.com/5b/26/353d67fd47178398b13845534caa/walmart.png" class="job-listing-logo"> <span tabindex="0" role="contentinfo" class="job-listing__department eyebrow">Product Management</span></div><div class="job-listing__info"> <span tabindex="0" role="contentinfo" class="job-listing__location">HOBOKEN, NJ</span> <span tabindex="0" role="contentinfo" class="job-listing__created">12/22/22</span></div></li>  <li class="search-result job-listing   "><div class="job-listing__headline"><h4 class="job-listing__title"><a class="job-listing__link" href="https://careers.walmart.com/us/jobs/WD1328218-usa-director-product-management-us">(USA) Director, Product Management (US)</a></h4> <img aria-hidden="true" src="https://walmart-careers.scdn3.secure.raxcdn.com/5b/26/353d67fd47178398b13845534caa/walmart.png" class="job-listing-logo"> <span tabindex="0" role="contentinfo" class="job-listing__department eyebrow">Product Management</span></div><div class="job-listing__info"> <span tabindex="0" role="contentinfo" class="job-listing__location">HOBOKEN, NJ</span> <span tabindex="0" role="contentinfo" class="job-listing__created">12/22/22</span></div></li>  <li class="search-result job-listing   "><div class="job-listing__headline"><h4 class="job-listing__title"><a class="job-listing__link" href="https://careers.walmart.com/us/jobs/WD1356618-senior-manager-i-data-engineering">Senior Manager I, Data Engineering</a></h4> <img aria-hidden="true" src="https://walmart-careers.scdn3.secure.raxcdn.com/8d/1c/7a6bf42c4d32940c03bcc8546d4f/samslogo.svg.svg" class="job-listing-logo"> <span tabindex="0" role="contentinfo" class="job-listing__department eyebrow">Software Development and Engineering</span></div><div class="job-listing__info"> <span tabindex="0" role="contentinfo" class="job-listing__location">DALLAS, TX</span> <span tabindex="0" role="contentinfo" class="job-listing__created">12/22/22</span></div></li>  <li class="search-result job-listing   "><div class="job-listing__headline"><h4 class="job-listing__title"><a class="job-listing__link" href="https://careers.walmart.com/us/jobs/WD1346110-senior-software-engineer">Senior Software Engineer</a></h4> <img aria-hidden="true" src="https://walmart-careers.scdn3.secure.raxcdn.com/5b/26/353d67fd47178398b13845534caa/walmart.png" class="job-listing-logo"> <span tabindex="0" role="contentinfo" class="job-listing__department eyebrow">Software Development and Engineering</span></div><div class="job-listing__info"> <span tabindex="0" role="contentinfo" class="job-listing__location">BENTONVILLE, AR</span> <span tabindex="0" role="contentinfo" class="job-listing__created">12/22/22</span></div></li>  <li class="search-result job-listing   "><div class="job-listing__headline"><h4 class="job-listing__title"><a class="job-listing__link" href="https://careers.walmart.com/us/jobs/WD1358251-senior-manager-i-software-engineering">Senior Manager I, Software Engineering</a></h4> <img aria-hidden="true" src="https://walmart-careers.scdn3.secure.raxcdn.com/8d/1c/7a6bf42c4d32940c03bcc8546d4f/samslogo.svg.svg" class="job-listing-logo"> <span tabindex="0" role="contentinfo" class="job-listing__department eyebrow">Software Development and Engineering</span></div><div class="job-listing__info"> <span tabindex="0" role="contentinfo" class="job-listing__location">BENTONVILLE, AR</span> <span tabindex="0" role="contentinfo" class="job-listing__created">12/22/22</span></div></li>  <li class="search-result job-listing   "><div class="job-listing__headline"><h4 class="job-listing__title"><a class="job-listing__link" href="https://careers.walmart.com/us/jobs/WD1358498-principal-designer-us">Principal Designer (US)</a></h4> <img aria-hidden="true" src="https://walmart-careers.scdn3.secure.raxcdn.com/5b/26/353d67fd47178398b13845534caa/walmart.png" class="job-listing-logo"> <span tabindex="0" role="contentinfo" class="job-listing__department eyebrow">Software Development and Engineering</span></div><div class="job-listing__info"> <span tabindex="0" role="contentinfo" class="job-listing__location">SEATTLE, WA</span> <span tabindex="0" role="contentinfo" class="job-listing__created">12/22/22</span></div></li>  <li class="search-result job-listing   "><div class="job-listing__headline"><h4 class="job-listing__title"><a class="job-listing__link" href="https://careers.walmart.com/us/jobs/WD1308612-usa-software-engineer-ii">(USA) Software Engineer II</a></h4> <img aria-hidden="true" src="https://walmart-careers.scdn3.secure.raxcdn.com/5b/26/353d67fd47178398b13845534caa/walmart.png" class="job-listing-logo"> <span tabindex="0" role="contentinfo" class="job-listing__department eyebrow">Software Development and Engineering</span></div><div class="job-listing__info"> <span tabindex="0" role="contentinfo" class="job-listing__location">HOBOKEN, NJ</span> <span tabindex="0" role="contentinfo" class="job-listing__created">12/22/22</span></div></li>  <li class="search-result job-listing   "><div class="job-listing__headline"><h4 class="job-listing__title"><a class="job-listing__link" href="https://careers.walmart.com/us/jobs/WD1301255-principal-technical-architect">Principal Technical Architect</a></h4> <img aria-hidden="true" src="https://walmart-careers.scdn3.secure.raxcdn.com/5b/26/353d67fd47178398b13845534caa/walmart.png" class="job-listing-logo"> <span tabindex="0" role="contentinfo" class="job-listing__department eyebrow">Software Development and Engineering</span></div><div class="job-listing__info"> <span tabindex="0" role="contentinfo" class="job-listing__location">HOBOKEN, NJ</span> <span tabindex="0" role="contentinfo" class="job-listing__created">12/22/22</span></div></li>  <li class="search-result job-listing   "><div class="job-listing__headline"><h4 class="job-listing__title"><a class="job-listing__link" href="https://careers.walmart.com/us/jobs/WD1269970-software-engineer-ii-java">Software Engineer II - Java</a></h4> <img aria-hidden="true" src="https://walmart-careers.scdn3.secure.raxcdn.com/5b/26/353d67fd47178398b13845534caa/walmart.png" class="job-listing-logo"> <span tabindex="0" role="contentinfo" class="job-listing__department eyebrow">Software Development and Engineering</span></div><div class="job-listing__info"> <span tabindex="0" role="contentinfo" class="job-listing__location">BENTONVILLE, AR</span> <span tabindex="0" role="contentinfo" class="job-listing__created">12/22/22</span></div></li>  <li class="search-result job-listing   "><div class="job-listing__headline"><h4 class="job-listing__title"><a class="job-listing__link" href="https://careers.walmart.com/us/jobs/WD785541-usa-software-engineer-iii">(USA) Software Engineer III</a></h4> <img aria-hidden="true" src="https://walmart-careers.scdn3.secure.raxcdn.com/5b/26/353d67fd47178398b13845534caa/walmart.png" class="job-listing-logo"> <span tabindex="0" role="contentinfo" class="job-listing__department eyebrow">Software Development and Engineering</span></div><div class="job-listing__info"> <span tabindex="0" role="contentinfo" class="job-listing__location">RESTON, VA</span> <span tabindex="0" role="contentinfo" class="job-listing__created">12/21/22</span></div></li>  <li class="search-result job-listing   "><div class="job-listing__headline"><h4 class="job-listing__title"><a class="job-listing__link" href="https://careers.walmart.com/us/jobs/WD1256226-usa-software-engineer-iii">(USA) Software Engineer III</a></h4> <img aria-hidden="true" src="https://walmart-careers.scdn3.secure.raxcdn.com/5b/26/353d67fd47178398b13845534caa/walmart.png" class="job-listing-logo"> <span tabindex="0" role="contentinfo" class="job-listing__department eyebrow">Software Development and Engineering</span></div><div class="job-listing__info"> <span tabindex="0" role="contentinfo" class="job-listing__location">SUNNYVALE, CA</span> <span tabindex="0" role="contentinfo" class="job-listing__created">12/21/22</span></div></li>  <li class="search-result job-listing   "><div class="job-listing__headline"><h4 class="job-listing__title"><a class="job-listing__link" href="https://careers.walmart.com/us/jobs/WD1342145-usa-systems-engineer-cybersecurity">(USA) Systems Engineer, Cybersecurity</a></h4> <img aria-hidden="true" src="https://walmart-careers.scdn3.secure.raxcdn.com/5b/26/353d67fd47178398b13845534caa/walmart.png" class="job-listing-logo"> <span tabindex="0" role="contentinfo" class="job-listing__department eyebrow">Cybersecurity</span></div><div class="job-listing__info"> <span tabindex="0" role="contentinfo" class="job-listing__location">BENTONVILLE, AR</span> <span tabindex="0" role="contentinfo" class="job-listing__created">12/21/22</span></div></li>  <li class="search-result job-listing   "><div class="job-listing__headline"><h4 class="job-listing__title"><a class="job-listing__link" href="https://careers.walmart.com/us/jobs/WD1355433-usa-senior-mobile-engineer-andriod">(USA) Senior Mobile Engineer - Andriod</a></h4> <img aria-hidden="true" src="https://walmart-careers.scdn3.secure.raxcdn.com/5b/26/353d67fd47178398b13845534caa/walmart.png" class="job-listing-logo"> <span tabindex="0" role="contentinfo" class="job-listing__department eyebrow">Software Development and Engineering</span></div><div class="job-listing__info"> <span tabindex="0" role="contentinfo" class="job-listing__location">SUNNYVALE, CA</span> <span tabindex="0" role="contentinfo" class="job-listing__created">12/21/22</span></div></li>  <li class="search-result job-listing   "><div class="job-listing__headline"><h4 class="job-listing__title"><a class="job-listing__link" href="https://careers.walmart.com/us/jobs/WD1336204-usa-software-engineer-iii">(USA) Software Engineer III</a></h4> <img aria-hidden="true" src="https://walmart-careers.scdn3.secure.raxcdn.com/8d/1c/7a6bf42c4d32940c03bcc8546d4f/samslogo.svg.svg" class="job-listing-logo"> <span tabindex="0" role="contentinfo" class="job-listing__department eyebrow">Software Development and Engineering</span></div><div class="job-listing__info"> <span tabindex="0" role="contentinfo" class="job-listing__location">SUNNYVALE, CA</span> <span tabindex="0" role="contentinfo" class="job-listing__created">12/21/22</span></div></li> </ul>  <ul class="search__results__pagination">   <li> <button aria-label="go to page 1" class="search__results__pagination__item active" data-page="1"> 1</button></li> <li> <button aria-label="go to page 2" class="search__results__pagination__item" data-page="2"> 2</button></li> <li> <button aria-label="go to page 3" class="search__results__pagination__item" data-page="3"> 3</button></li> <li> <button aria-label="go to page 4" class="search__results__pagination__item" data-page="4"> 4</button></li> <li> <button aria-label="go to page 5" class="search__results__pagination__item" data-page="5"> 5</button></li> <li> <button aria-label="go to page 6" class="search__results__pagination__item" data-page="6"> 6</button></li> <li> <button aria-label="go to page 7" class="search__results__pagination__item" data-page="7"> 7</button></li> <li> <button aria-label="go to page 8" class="search__results__pagination__item" data-page="8"> 8</button></li> <li> <button aria-label="go to page 9" class="search__results__pagination__item" data-page="9"> 9</button></li> <li> <button aria-label="go to page 10" class="search__results__pagination__item" data-page="10"> 10</button></li>  <li> <button class="search__results__pagination__arrow" aria-label="go to next page" data-page="next"><svg class="icon"><use xlink:href="/sprite.svg#arrow-right"></use></svg></button></li>  </ul></div><div class="search__no-results"><h3> Your search for "<span class="search__term search__term--blue"></span>"<span id="before-search__location-text"></span><span id="search__location" class="search__term--blue"></span> returned no results. Check back later to see if there are any new openings, try a new keyword, change the location, or <span class="filter__toggle link">update your filters.</span></h3> <div class="search-suggestions"><h3>Suggested searches</h3><div class="grid grid--wrap"> <div class="search-suggestions__category col-3"><h6 class="eyebrow">Stores &amp; Clubs</h6><ul> <li><a class="link" href="/results?q&#x3D;cashier&amp;ref&#x3D;popular%20category">Cashier</a></li> <li><a class="link" href="/results?q&#x3D;Sales%20Associate&amp;ref&#x3D;popular%20category">Sales Associate</a></li> <li><a class="link" href="/results?q&#x3D;backroom&amp;ref&#x3D;popular%20category">Stocker</a></li> <li><a class="link" href="/results?q&#x3D;Fresh%20Food%20Associate&amp;jobDepartmentCode&#x3D;160902875,1258366554&amp;ref&#x3D;popular%20category">Fresh Food Associate</a></li> <li><a class="link" href="/results?q&#x3D;Cart%20Attendant&amp;ref&#x3D;popular%20category">Cart Attendant</a></li> </ul></div> <div class="search-suggestions__category col-3"><h6 class="eyebrow">Corporate</h6><ul> <li><a class="link" href="/results?q&#x3D;*&amp;jobDepartmentCode&#x3D;-872043147&amp;ref&#x3D;popular%20category">Technology &amp; Software</a></li> <li><a class="link" href="/results?q&#x3D;*&amp;jobDepartmentCode&#x3D;1980869752&amp;ref&#x3D;popular%20category">Merchandising</a></li> <li><a class="link" href="/results?q&#x3D;*&amp;jobDepartmentCode&#x3D;433826940&amp;ref&#x3D;popular%20category">Human Resources</a></li> <li><a class="link" href="/results?q&#x3D;*&amp;jobDepartmentCode&#x3D;531868790&amp;ref&#x3D;popular%20category">Supply Chain &amp; Logistics</a></li> <li><a class="link" href="/results?q&#x3D;*&amp;jobDepartmentCode&#x3D;1121396314&amp;ref&#x3D;popular%20category">Accounting &amp; Finance</a></li> </ul></div> <div class="search-suggestions__category col-3"><h6 class="eyebrow">Healthcare</h6><ul> <li><a class="link" href="/results?q&#x3D;Pharmacist&amp;jobDepartmentCode&#x3D;-2118703550&amp;ref&#x3D;popular%20category">Pharmacist</a></li> <li><a class="link" href="/results?q&#x3D;*&amp;jobDepartmentCode&#x3D;-1141823934&amp;ref&#x3D;popular%20category">Optometrist</a></li> <li><a class="link" href="/results?q&#x3D;Pharmacy%20Manager&amp;jobDepartmentCode&#x3D;-2118703550&amp;ref&#x3D;popular%20category">Pharmacy Manager</a></li> <li><a class="link" href="/results?q&#x3D;Nurse&amp;jobDepartmentCode&#x3D;-1132876687&amp;ref&#x3D;popular%20category">Nurse Practitioner</a></li> <li><a class="link" href="/results?q&#x3D;Intern&amp;jobDepartmentCode&#x3D;-2118703550&amp;ref&#x3D;popular%20category">Pharmacy Intern</a></li> </ul></div> <div class="search-suggestions__category col-3"><h6 class="eyebrow">Drivers &amp; DCs</h6><ul> <li><a class="link" href="/results?q&#x3D;*&amp;jobDepartmentCode&#x3D;385985647&amp;ref&#x3D;popular%20category">Drivers</a></li> <li><a class="link" href="/results?q&#x3D;*&amp;jobDepartmentCode&#x3D;187772666&amp;ref&#x3D;popular%20category">Distribution Centers</a></li> <li><a class="link" href="/results?q&#x3D;*&amp;jobDepartmentCode&#x3D;187772666&amp;jobState&#x3D;GA&amp;ref&#x3D;popular%20category">Georgia DC Jobs</a></li> <li><a class="link" href="/results?q&#x3D;*&amp;jobDepartmentCode&#x3D;187772666&amp;jobState&#x3D;TX&amp;ref&#x3D;popular%20category">Texas DC Jobs</a></li> <li><a class="link" href="/results?q&#x3D;*&amp;jobDepartmentCode&#x3D;187772666&amp;jobState&#x3D;FL&amp;ref&#x3D;popular%20category">Florida DC Jobs</a></li> </ul></div> </div></div></div>  <section class="recent-jobs" data-component="recentJobs"><div class="container"><h2 class="heading-2 indent" tabindex="0">Recently viewed jobs</h2><ul class="job-listing__list accordion__list" data-component="accordion"></ul></div><script id="recent-jobs" type="text/x-handlebars-template">
+                            <
+                            li class = "search-result job-listing {{# brandCssClassName}} {{ brandCssClassName }} {{/ brandCssClassName}}" > < div class = "job-listing__headline" > < h4 class = "job-listing__title" > < a class = "job-listing__link"
+                        href = "{{ jobSlug }}" > {
+                            {
+                                {
+                                    jobTitle
+                                }
+                            }
+                        } < /a></h4 > < img aria - hidden = "true"
+                        src = "{{ brandImageUrl }}"
+                        class = "job-listing-logo" > < span tabindex = "0"
+                        role = "contentinfo"
+                        class = "job-listing__department eyebrow" > {
+                            {
+                                {
+                                    jobDepartmentName
+                                }
+                            }
+                        } < /span></div > < div class = "job-listing__info" > < span tabindex = "0"
+                        role = "contentinfo"
+                        class = "job-listing__location" > {
+                            {
+                                {
+                                    jobLocation
+                                }
+                            }
+                        } {
+                            {
+                                # jobState
+                            }
+                        }, {
+                            {
+                                / jobState }} {{{ jobState }}}</span > < span tabindex = "0"
+                                role = "contentinfo"
+                                class = "job-listing__created" > {
+                                    {
+                                        dateCreated
+                                    }
+                                } < /span></div > < /li> <
+                                /script></section > < /div></div > < /div></div > < /section>

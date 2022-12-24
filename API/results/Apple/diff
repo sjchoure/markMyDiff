@@ -1,0 +1,424 @@
+--- results/Apple/old	2022-12-24 01:39:46.399707826 +0000
++++ results/Apple/new	2022-12-24 02:03:32.254170873 +0000
+@@ -4265,210 +4265,6 @@
+             "mediumDate": "MMM D, YYYY"
+         },
+         "refData": {
+-            "products": [{
+-                "id": "productsAndServices-IAD",
+-                "name": "Ad Platforms",
+-                "displayName": "Ad Platforms",
+-                "uniqueKey": "productsAndServices-IAD",
+-                "code": "IAD",
+-                "name_en_US": "Ad Platforms"
+-            }, {
+-                "id": "productsAndServices-AIRPD",
+-                "name": "AirPods",
+-                "displayName": "AirPods",
+-                "uniqueKey": "productsAndServices-AIRPD",
+-                "code": "AIRPD",
+-                "name_en_US": "AirPods"
+-            }, {
+-                "id": "productsAndServices-APPAS",
+-                "name": "Apple accessories",
+-                "displayName": "Apple accessories",
+-                "uniqueKey": "productsAndServices-APPAS",
+-                "code": "APPAS",
+-                "name_en_US": "Apple accessories"
+-            }, {
+-                "id": "productsAndServices-APPAC",
+-                "name": "AppleCare",
+-                "displayName": "AppleCare",
+-                "uniqueKey": "productsAndServices-APPAC",
+-                "code": "APPAC",
+-                "name_en_US": "AppleCare"
+-            }, {
+-                "id": "productsAndServices-APPMU",
+-                "name": "Apple Music",
+-                "displayName": "Apple Music",
+-                "uniqueKey": "productsAndServices-APPMU",
+-                "code": "APPMU",
+-                "name_en_US": "Apple Music"
+-            }, {
+-                "id": "productsAndServices-APPAY",
+-                "name": "Apple Pay",
+-                "displayName": "Apple Pay",
+-                "uniqueKey": "productsAndServices-APPAY",
+-                "code": "APPAY",
+-                "name_en_US": "Apple Pay"
+-            }, {
+-                "id": "productsAndServices-APRTS",
+-                "name": "Apple Retail Store",
+-                "displayName": "Apple Retail Store",
+-                "uniqueKey": "productsAndServices-APRTS",
+-                "code": "APRTS",
+-                "name_en_US": "Apple Retail Store"
+-            }, {
+-                "id": "productsAndServices-APPTV",
+-                "name": "Apple TV",
+-                "displayName": "Apple TV",
+-                "uniqueKey": "productsAndServices-APPTV",
+-                "code": "APPTV",
+-                "name_en_US": "Apple TV"
+-            }, {
+-                "id": "productsAndServices-AWB",
+-                "name": "Apple Online Store",
+-                "displayName": "Apple Online Store",
+-                "uniqueKey": "productsAndServices-AWB",
+-                "code": "AWB",
+-                "name_en_US": "Apple Online Store"
+-            }, {
+-                "id": "productsAndServices-APPWT",
+-                "name": "Apple Watch",
+-                "displayName": "Apple Watch",
+-                "uniqueKey": "productsAndServices-APPWT",
+-                "code": "APPWT",
+-                "name_en_US": "Apple Watch"
+-            }, {
+-                "id": "productsAndServices-APPST",
+-                "name": "App Store",
+-                "displayName": "App Store",
+-                "uniqueKey": "productsAndServices-APPST",
+-                "code": "APPST",
+-                "name_en_US": "App Store"
+-            }, {
+-                "id": "productsAndServices-BTSAA",
+-                "name": "Beats Audio Accessories",
+-                "displayName": "Beats Audio Accessories",
+-                "uniqueKey": "productsAndServices-BTSAA",
+-                "code": "BTSAA",
+-                "name_en_US": "Beats Audio Accessories"
+-            }, {
+-                "id": "productsAndServices-CONPRO",
+-                "name": "Consumer and Pro Apps",
+-                "displayName": "Consumer and Pro Apps",
+-                "uniqueKey": "productsAndServices-CONPRO",
+-                "code": "CONPRO",
+-                "name_en_US": "Consumer and Pro Apps"
+-            }, {
+-                "id": "productsAndServices-FM",
+-                "name": "Claris",
+-                "displayName": "Claris",
+-                "uniqueKey": "productsAndServices-FM",
+-                "code": "FM",
+-                "name_en_US": "Claris"
+-            }, {
+-                "id": "productsAndServices-HMPD",
+-                "name": "HomePod",
+-                "displayName": "HomePod",
+-                "uniqueKey": "productsAndServices-HMPD",
+-                "code": "HMPD",
+-                "name_en_US": "HomePod"
+-            }, {
+-                "id": "productsAndServices-ICLD",
+-                "name": "iCloud",
+-                "displayName": "iCloud",
+-                "uniqueKey": "productsAndServices-ICLD",
+-                "code": "ICLD",
+-                "name_en_US": "iCloud"
+-            }, {
+-                "id": "productsAndServices-IOS",
+-                "name": "iOS",
+-                "displayName": "iOS",
+-                "uniqueKey": "productsAndServices-IOS",
+-                "code": "IOS",
+-                "name_en_US": "iOS"
+-            }, {
+-                "id": "productsAndServices-IPAD",
+-                "name": "iPad",
+-                "displayName": "iPad",
+-                "uniqueKey": "productsAndServices-IPAD",
+-                "code": "IPAD",
+-                "name_en_US": "iPad"
+-            }, {
+-                "id": "productsAndServices-IPHN",
+-                "name": "iPhone",
+-                "displayName": "iPhone",
+-                "uniqueKey": "productsAndServices-IPHN",
+-                "code": "IPHN",
+-                "name_en_US": "iPhone"
+-            }, {
+-                "id": "productsAndServices-IPOD",
+-                "name": "iPod",
+-                "displayName": "iPod",
+-                "uniqueKey": "productsAndServices-IPOD",
+-                "code": "IPOD",
+-                "name_en_US": "iPod"
+-            }, {
+-                "id": "productsAndServices-ITUNS",
+-                "name": "iTunes",
+-                "displayName": "iTunes",
+-                "uniqueKey": "productsAndServices-ITUNS",
+-                "code": "ITUNS",
+-                "name_en_US": "iTunes"
+-            }, {
+-                "id": "productsAndServices-MAC",
+-                "name": "Mac",
+-                "displayName": "Mac",
+-                "uniqueKey": "productsAndServices-MAC",
+-                "code": "MAC",
+-                "name_en_US": "Mac"
+-            }, {
+-                "id": "productsAndServices-MACOS",
+-                "name": "macOS",
+-                "displayName": "macOS",
+-                "uniqueKey": "productsAndServices-MACOS",
+-                "code": "MACOS",
+-                "name_en_US": "macOS"
+-            }, {
+-                "id": "productsAndServices-MAPS",
+-                "name": "Maps",
+-                "displayName": "Maps",
+-                "uniqueKey": "productsAndServices-MAPS",
+-                "code": "MAPS",
+-                "name_en_US": "Maps"
+-            }, {
+-                "id": "productsAndServices-NEWS",
+-                "name": "News",
+-                "displayName": "News",
+-                "uniqueKey": "productsAndServices-NEWS",
+-                "code": "NEWS",
+-                "name_en_US": "News"
+-            }, {
+-                "id": "productsAndServices-SIRI",
+-                "name": "Siri",
+-                "displayName": "Siri",
+-                "uniqueKey": "productsAndServices-SIRI",
+-                "code": "SIRI",
+-                "name_en_US": "Siri"
+-            }, {
+-                "id": "productsAndServices-TVOS",
+-                "name": "tvOS",
+-                "displayName": "tvOS",
+-                "uniqueKey": "productsAndServices-TVOS",
+-                "code": "TVOS",
+-                "name_en_US": "tvOS"
+-            }, {
+-                "id": "productsAndServices-WTOS",
+-                "name": "watchOS",
+-                "displayName": "watchOS",
+-                "uniqueKey": "productsAndServices-WTOS",
+-                "code": "WTOS",
+-                "name_en_US": "watchOS"
+-            }, {
+-                "id": "productsAndServices-OTH",
+-                "name": "Other",
+-                "displayName": "Other",
+-                "uniqueKey": "productsAndServices-OTH",
+-                "code": "OTH",
+-                "name_en_US": "Other"
+-            }],
+             "teams": [{
+                 "id": "teamsAndSubTeams-MLAI",
+                 "type": "Machine Learning and AI",
+@@ -5521,6 +5317,210 @@
+                     "subTeam_en_US": "Apple Campus Leader",
+                     "team_en_US": "Students"
+                 }]
++            }],
++            "products": [{
++                "id": "productsAndServices-IAD",
++                "name": "Ad Platforms",
++                "displayName": "Ad Platforms",
++                "uniqueKey": "productsAndServices-IAD",
++                "code": "IAD",
++                "name_en_US": "Ad Platforms"
++            }, {
++                "id": "productsAndServices-AIRPD",
++                "name": "AirPods",
++                "displayName": "AirPods",
++                "uniqueKey": "productsAndServices-AIRPD",
++                "code": "AIRPD",
++                "name_en_US": "AirPods"
++            }, {
++                "id": "productsAndServices-APPAS",
++                "name": "Apple accessories",
++                "displayName": "Apple accessories",
++                "uniqueKey": "productsAndServices-APPAS",
++                "code": "APPAS",
++                "name_en_US": "Apple accessories"
++            }, {
++                "id": "productsAndServices-APPAC",
++                "name": "AppleCare",
++                "displayName": "AppleCare",
++                "uniqueKey": "productsAndServices-APPAC",
++                "code": "APPAC",
++                "name_en_US": "AppleCare"
++            }, {
++                "id": "productsAndServices-APPMU",
++                "name": "Apple Music",
++                "displayName": "Apple Music",
++                "uniqueKey": "productsAndServices-APPMU",
++                "code": "APPMU",
++                "name_en_US": "Apple Music"
++            }, {
++                "id": "productsAndServices-APPAY",
++                "name": "Apple Pay",
++                "displayName": "Apple Pay",
++                "uniqueKey": "productsAndServices-APPAY",
++                "code": "APPAY",
++                "name_en_US": "Apple Pay"
++            }, {
++                "id": "productsAndServices-APRTS",
++                "name": "Apple Retail Store",
++                "displayName": "Apple Retail Store",
++                "uniqueKey": "productsAndServices-APRTS",
++                "code": "APRTS",
++                "name_en_US": "Apple Retail Store"
++            }, {
++                "id": "productsAndServices-APPTV",
++                "name": "Apple TV",
++                "displayName": "Apple TV",
++                "uniqueKey": "productsAndServices-APPTV",
++                "code": "APPTV",
++                "name_en_US": "Apple TV"
++            }, {
++                "id": "productsAndServices-AWB",
++                "name": "Apple Online Store",
++                "displayName": "Apple Online Store",
++                "uniqueKey": "productsAndServices-AWB",
++                "code": "AWB",
++                "name_en_US": "Apple Online Store"
++            }, {
++                "id": "productsAndServices-APPWT",
++                "name": "Apple Watch",
++                "displayName": "Apple Watch",
++                "uniqueKey": "productsAndServices-APPWT",
++                "code": "APPWT",
++                "name_en_US": "Apple Watch"
++            }, {
++                "id": "productsAndServices-APPST",
++                "name": "App Store",
++                "displayName": "App Store",
++                "uniqueKey": "productsAndServices-APPST",
++                "code": "APPST",
++                "name_en_US": "App Store"
++            }, {
++                "id": "productsAndServices-BTSAA",
++                "name": "Beats Audio Accessories",
++                "displayName": "Beats Audio Accessories",
++                "uniqueKey": "productsAndServices-BTSAA",
++                "code": "BTSAA",
++                "name_en_US": "Beats Audio Accessories"
++            }, {
++                "id": "productsAndServices-CONPRO",
++                "name": "Consumer and Pro Apps",
++                "displayName": "Consumer and Pro Apps",
++                "uniqueKey": "productsAndServices-CONPRO",
++                "code": "CONPRO",
++                "name_en_US": "Consumer and Pro Apps"
++            }, {
++                "id": "productsAndServices-FM",
++                "name": "Claris",
++                "displayName": "Claris",
++                "uniqueKey": "productsAndServices-FM",
++                "code": "FM",
++                "name_en_US": "Claris"
++            }, {
++                "id": "productsAndServices-HMPD",
++                "name": "HomePod",
++                "displayName": "HomePod",
++                "uniqueKey": "productsAndServices-HMPD",
++                "code": "HMPD",
++                "name_en_US": "HomePod"
++            }, {
++                "id": "productsAndServices-ICLD",
++                "name": "iCloud",
++                "displayName": "iCloud",
++                "uniqueKey": "productsAndServices-ICLD",
++                "code": "ICLD",
++                "name_en_US": "iCloud"
++            }, {
++                "id": "productsAndServices-IOS",
++                "name": "iOS",
++                "displayName": "iOS",
++                "uniqueKey": "productsAndServices-IOS",
++                "code": "IOS",
++                "name_en_US": "iOS"
++            }, {
++                "id": "productsAndServices-IPAD",
++                "name": "iPad",
++                "displayName": "iPad",
++                "uniqueKey": "productsAndServices-IPAD",
++                "code": "IPAD",
++                "name_en_US": "iPad"
++            }, {
++                "id": "productsAndServices-IPHN",
++                "name": "iPhone",
++                "displayName": "iPhone",
++                "uniqueKey": "productsAndServices-IPHN",
++                "code": "IPHN",
++                "name_en_US": "iPhone"
++            }, {
++                "id": "productsAndServices-IPOD",
++                "name": "iPod",
++                "displayName": "iPod",
++                "uniqueKey": "productsAndServices-IPOD",
++                "code": "IPOD",
++                "name_en_US": "iPod"
++            }, {
++                "id": "productsAndServices-ITUNS",
++                "name": "iTunes",
++                "displayName": "iTunes",
++                "uniqueKey": "productsAndServices-ITUNS",
++                "code": "ITUNS",
++                "name_en_US": "iTunes"
++            }, {
++                "id": "productsAndServices-MAC",
++                "name": "Mac",
++                "displayName": "Mac",
++                "uniqueKey": "productsAndServices-MAC",
++                "code": "MAC",
++                "name_en_US": "Mac"
++            }, {
++                "id": "productsAndServices-MACOS",
++                "name": "macOS",
++                "displayName": "macOS",
++                "uniqueKey": "productsAndServices-MACOS",
++                "code": "MACOS",
++                "name_en_US": "macOS"
++            }, {
++                "id": "productsAndServices-MAPS",
++                "name": "Maps",
++                "displayName": "Maps",
++                "uniqueKey": "productsAndServices-MAPS",
++                "code": "MAPS",
++                "name_en_US": "Maps"
++            }, {
++                "id": "productsAndServices-NEWS",
++                "name": "News",
++                "displayName": "News",
++                "uniqueKey": "productsAndServices-NEWS",
++                "code": "NEWS",
++                "name_en_US": "News"
++            }, {
++                "id": "productsAndServices-SIRI",
++                "name": "Siri",
++                "displayName": "Siri",
++                "uniqueKey": "productsAndServices-SIRI",
++                "code": "SIRI",
++                "name_en_US": "Siri"
++            }, {
++                "id": "productsAndServices-TVOS",
++                "name": "tvOS",
++                "displayName": "tvOS",
++                "uniqueKey": "productsAndServices-TVOS",
++                "code": "TVOS",
++                "name_en_US": "tvOS"
++            }, {
++                "id": "productsAndServices-WTOS",
++                "name": "watchOS",
++                "displayName": "watchOS",
++                "uniqueKey": "productsAndServices-WTOS",
++                "code": "WTOS",
++                "name_en_US": "watchOS"
++            }, {
++                "id": "productsAndServices-OTH",
++                "name": "Other",
++                "displayName": "Other",
++                "uniqueKey": "productsAndServices-OTH",
++                "code": "OTH",
++                "name_en_US": "Other"
+             }]
+         },
+         "searchTerm": "software engineer",

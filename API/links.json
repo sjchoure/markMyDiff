@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Walmart",
+        "url": "https://careers.walmart.com/api/search?q=software%20engineer&sort=date&jobEmploymentType=0000015a-721c-dcbc-afda-779e92ad0000&expand=department,brand,type,rate&jobCareerArea=all&type=job"
+    },
+    {
+        "name": "Amazon",
+        "url": "https://www.amazon.jobs/en/search.json?category[]=software-development&category[]=systems-quality-security-engineering&category[]=machine-learning-science&category[]=data-science&schedule_type_id[]=Full-Time&normalized_country_code[]=USA&radius=24km&is_manager[]=0&facets[]=normalized_country_code&facets[]=normalized_state_name&facets[]=normalized_city_name&facets[]=location&facets[]=business_category&facets[]=category&facets[]=schedule_type_id&facets[]=employee_class&facets[]=normalized_location&facets[]=job_function_id&facets[]=is_manager&facets[]=is_intern&offset=0&result_limit=100&sort=recent&latitude=&longitude=&loc_group_id=&loc_query=&base_query=software%20engineer&city=&country=&region=&county=&query_options=&"
+    },
+    {
+        "name": "Apple",
+        "url": "https://jobs.apple.com/en-us/search?location=united-states-USA&sort=newest&search=software%20engineer&page=0"
+    },
+    {
+        "name": "CVS Health",
+        "url": "https://jobsapi-google.m-cloud.io/api/job/search?callback=jobsCallback&pageSize=10&offset=0&companyName=companies/39e30343-8bbb-42cd-8e86-6734943cb4b9&query=software%20engineer&customAttributeFilter=addtnl_categories=%22Software%20Engineering%22%20AND%20employment_type=%22FullTime%22&orderBy=relevance%20desc&disableSpellCheck=true&enableBroadening=true"
+    }
+]
