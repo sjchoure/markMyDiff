@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/markMyDiff/static/css/main.146d445f.css",
+    "main.js": "/markMyDiff/static/js/main.a993ffd1.js",
+    "index.html": "/markMyDiff/index.html",
+    "main.146d445f.css.map": "/markMyDiff/static/css/main.146d445f.css.map",
+    "main.a993ffd1.js.map": "/markMyDiff/static/js/main.a993ffd1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.146d445f.css",
+    "static/js/main.a993ffd1.js"
+  ]
+}
