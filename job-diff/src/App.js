@@ -10,7 +10,6 @@ import Stack from "@mui/material/Stack";
 import CircularProgress from "@mui/material/CircularProgress";
 import Button from "@mui/material/Button";
 import ArticleIcon from "@mui/icons-material/Article";
-import IconButton from "@mui/material/IconButton";
 
 const App = () => {
   const [companies, setCompanies] = React.useState(null);
@@ -24,7 +23,7 @@ const App = () => {
           .get("https://horrible-falcon-29.telebit.io/folders/", {
             params: {
               offset: 0,
-              limit: 5,
+              limit: 7,
             },
           })
           .then((resp) => {
