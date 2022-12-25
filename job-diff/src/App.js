@@ -24,7 +24,7 @@ const App = () => {
           .get("https://horrible-falcon-29.telebit.io/folders/", {
             params: {
               offset: 0,
-              limit: 4,
+              limit: 5,
             },
           })
           .then((resp) => {
