@@ -16,9 +16,8 @@ const randomCommitHash = () => Math.random().toString(36).slice(2, 9);
 
 const Diffc = ({ diffText, title, stat }) => {
   const [expand, setExpand] = React.useState();
-
   const files = parseDiff(diffText.split("\n").join("\n"));
-  console.log(files);
+  // console.log(files);
   const renderFile = ({
     oldRevision = randomCommitHash(),
     newRevision = randomCommitHash(),
