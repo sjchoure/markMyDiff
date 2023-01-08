@@ -6,7 +6,7 @@ import SpeedDialAction from "@mui/material/SpeedDialAction";
 import GpsFixedIcon from '@mui/icons-material/GpsFixed';
 
 const actions = [{
-  icon: <GpsFixedIcon />, name: "Re-Center"
+  icon: <GpsFixedIcon />, name: "reCenter"
 }];
 
 const Heatmap = () => {
@@ -167,6 +167,7 @@ const Heatmap = () => {
             key={action.name}
             icon={action.icon}
             tooltipTitle={action.name}
+            tooltipOpen
             ref={resetButtonRef}
           />
         ))}
