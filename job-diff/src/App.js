@@ -1,25 +1,25 @@
 import axios from "axios";
 import "./App.css";
 import React from "react";
-import Diffc from "./Diffc.js";
+// import Diffc from "./Diffc.js";
 import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
-import WorkIcon from "@mui/icons-material/Work";
-import Stack from "@mui/material/Stack";
-import CircularProgress from "@mui/material/CircularProgress";
-import Button from "@mui/material/Button";
-import ArticleIcon from "@mui/icons-material/Article";
-import Grid from "@mui/material/Grid";
-import Pagination from "@mui/material/Pagination";
-import Docs from "./Docs.js"
+// import Typography from "@mui/material/Typography";
+// import WorkIcon from "@mui/icons-material/Work";
+// import Stack from "@mui/material/Stack";
+// import CircularProgress from "@mui/material/CircularProgress";
+// import Button from "@mui/material/Button";
+// import ArticleIcon from "@mui/icons-material/Article";
+// import Grid from "@mui/material/Grid";
+// import Pagination from "@mui/material/Pagination";
+// import Docs from "./Docs.js"
 import Heatmap from "./Heatmap";
 
 const App = () => {
   const [companies, setCompanies] = React.useState(null);
   const [fileContents, setFileContents] = React.useState(null);
   const [fileStats, setFileStats] = React.useState(null);
-  const [showDocumentation, setShowDocumentation] = React.useState(false);
+  // const [showDocumentation, setShowDocumentation] = React.useState(false);
 
   const data1 = [];
   for (let i = 0; i < 25; i++) {
