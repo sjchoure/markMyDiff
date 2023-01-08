@@ -3,9 +3,11 @@ import * as d3 from "d3";
 import SpeedDial from "@mui/material/SpeedDial";
 import SpeedDialIcon from "@mui/material/SpeedDialIcon";
 import SpeedDialAction from "@mui/material/SpeedDialAction";
-import ReplayCircleFilledIcon from "@mui/icons-material/ReplayCircleFilled";
+import GpsFixedIcon from '@mui/icons-material/GpsFixed';
 
-const actions = [{ icon: <ReplayCircleFilledIcon />, name: "Run Task" }];
+const actions = [{
+  icon: <GpsFixedIcon />, name: "Re-Center"
+}];
 
 const Heatmap = () => {
   const heatmapRef = useRef(null);
@@ -46,7 +48,7 @@ const Heatmap = () => {
     }
 
     const zoom = d3.zoom()
-      .scaleExtent([1, 40])
+      .scaleExtent([0.5, 40])
       .on("zoom", zoomed);
 
     const g = svg.append('g')
@@ -156,7 +158,7 @@ const Heatmap = () => {
     <><div ref={heatmapRef} />
       <SpeedDial
         ariaLabel="test"
-        sx={{ position: "fixed", bottom: 16, right: 16, '& .MuiFab-primary:hover': { backgroundColor: 'white', color: 'grey' } }}
+        sx={{ position: "fixed", bottom: 16, right: 16 }}
         icon={< SpeedDialIcon />}
         direction={"up"}
       >
