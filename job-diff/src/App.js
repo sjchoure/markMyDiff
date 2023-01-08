@@ -89,73 +89,8 @@ const App = () => {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <Box flexGrow={1} px={3}>
-        <Stack py={1} direction="row" spacing={4} sx={{ color: "#0080FB" }}>
-          <Stack
-            direction="row"
-            spacing={1}
-            sx={{ display: "flex", alignItems: "center" }}
-          >
-            <WorkIcon sx={{ fontSize: "2rem" }} />
-            <Typography sx={{ fontSize: "2rem" }}>MarkMyDiff</Typography>
-          </Stack>
-          <Button variant="outlined" onClick={() => setShowDocumentation(!showDocumentation)}>
-            <ArticleIcon />
-            <Typography>Blog</Typography>
-          </Button>
-        </Stack>
-        {showDocumentation && <Docs />}
-        <Heatmap data={data1} width={500} height={400} cellSize={20} />
-        {companies != null && fileContents != null && fileStats != null ? (
-          <>
-            {companies.map((company, i) => {
-              return (
-                <Diffc
-                  key={company.name}
-                  diffText={fileContents[i]}
-                  title={company.name}
-                  stat={fileStats[i]}
-                />
-              );
-            })}
-            <Grid
-              container
-              spacing={1}
-              columns={16}
-              direction="column"
-              alignItems="center"
-              justifyContent="center"
-            >
-              <Grid item xs={16} my={3}>
-                <Pagination count={10} color="primary" />
-              </Grid>
-            </Grid>
-          </>
-        ) : (
-          <Box sx={{ display: "flex" }}>
-            <Stack py={1} direction="row" spacing={1}>
-              <CircularProgress size={25} />
-              <Typography variant="h5" component="h5">
-                Fetching list of companies
-              </Typography>
-            </Stack>
-          </Box>
-        )}
-        <SpeedDial
-          ariaLabel="SpeedDial basic example"
-          sx={{ position: "fixed", bottom: 16, right: 16 }}
-          icon={<SpeedDialIcon />}
-          direction={"up"}
-        >
-          {actions.map((action) => (
-            <SpeedDialAction
-              key={action.name}
-              icon={action.icon}
-              tooltipTitle={action.name}
-              onClick={fetchData}
-            />
-          ))}
-        </SpeedDial>
+      <Box>
+        <Heatmap />
       </Box>
     </Box>
   );

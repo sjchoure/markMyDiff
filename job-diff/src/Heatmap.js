@@ -23,20 +23,26 @@ const Heatmap = () => {
     const margin = { top: 0, right: 0, bottom: 30, left: 30 };
     const color = d3.scaleSequential(d3.interpolateBlues);
 
-    const outerSVG = d3.select(heatmapRef.current)
-      .append("svg")
-      .attr("preserveAspectRatio", "xMinYMin meet")
-      .attr("viewBox", "0 0" + 100% + "100%")
+    let transW = window.innerWidth / 2 - width / 2
+    let transH = window.innerHeight / 2 - height / 2
 
-    const svg = outerSVG
+    var svg = d3.select(heatmapRef.current)
+      .append("svg")
+      .attr("width", window.innerWidth)
+      .attr("height", window.innerHeight)
+      .style("background-color", "lightblue")
+      
+      .append("g")
+      .attr("transform", "translate(" + transW + "," + transH + ")")
+      .call(d3.zoom().on("zoom", function (event) {
+        svg.attr("transform", event.transform)
+      })).append('g')
+
+    svg
       .append("svg")
       .attr("width", width)
       .attr("height", height)
-      .call(d3.zoom().on("zoom", function (event) {
-        svg.attr("transform", event.transform)
-      }))
       .append("g")
-      .attr("transform", `translate(${margin.left},${margin.top})`);
 
     const x = d3
       .scaleBand()
@@ -81,34 +87,9 @@ const Heatmap = () => {
         d3.select(this).style("opacity", 1);
       });
 
-
-    function resize() {
-      // update width and height
-      width = heatmapRef.current.clientWidth;
-      height = width / 1.25;
-
-      // update svg dimensions
-      svg.attr('width', width).attr('height', height);
-
-      // update scales
-      x.range([0, width - margin.left - margin.right]);
-      y.range([0, height - margin.top - margin.bottom]);
-
-      // update axes
-      svg.select('.x.axis').call(d3.axisBottom(x));
-      svg.select('.y.axis').call(d3.axisLeft(y));
-
-      // update cells
-      cells.attr('x', (d) => x(d.col))
-        .attr('y', (d) => y(d.row))
-        .attr('width', x.bandwidth())
-        .attr('height', y.bandwidth());
-    }
-    //   window.addEventListener('resize', resize);
-    //   return () => window.removeEventListener('resize', resize);
   }, []);
 
-  return <div style={{border: "1px red solid" }} ref={heatmapRef} />;
+  return <div style={{ textAlign: "center" }} ref={heatmapRef} />;
 };
 
 export default Heatmap;
