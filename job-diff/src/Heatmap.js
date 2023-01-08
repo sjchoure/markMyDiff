@@ -100,7 +100,7 @@ const Heatmap = () => {
     const mousemove = function (event, d) {
       tooltip
         .html("The exact value of<br>this cell is: " + d.value)
-        .style("left", (event.x + 30) + "px")
+        .style("left", (event.x - 125) + "px")
         .style("top", (event.y + 30) + "px")
     }
     const mouseleave = function (event, d) {
