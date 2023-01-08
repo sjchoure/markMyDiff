@@ -1,8 +1,15 @@
 import React, { useRef, useEffect } from "react";
 import * as d3 from "d3";
+import SpeedDial from "@mui/material/SpeedDial";
+import SpeedDialIcon from "@mui/material/SpeedDialIcon";
+import SpeedDialAction from "@mui/material/SpeedDialAction";
+import ReplayCircleFilledIcon from "@mui/icons-material/ReplayCircleFilled";
+
+const actions = [{ icon: <ReplayCircleFilledIcon />, name: "Run Task" }];
 
 const Heatmap = () => {
   const heatmapRef = useRef(null);
+  const resetButtonRef = useRef(null);
 
   useEffect(() => {
     const data = [];
@@ -30,52 +37,55 @@ const Heatmap = () => {
       .append("svg")
       .attr("width", window.innerWidth)
       .attr("height", window.innerHeight)
-      .style("background-color", "lightblue")
+      .style("background-color", "#f7f6f5")
       .append("g")
       .attr("transform", "translate(" + transW + "," + transH + ")")
-      .call(d3.zoom().on("zoom", function (event) {
-        svg.attr("transform", event.transform)
-      })).append('g')
 
-    svg.append("rect")
+    function zoomed({ transform }) {
+      g.attr("transform", transform);
+    }
+
+    const zoom = d3.zoom()
+      .scaleExtent([1, 40])
+      .on("zoom", zoomed);
+
+    const g = svg.append('g')
+
+    g.append("rect")
       .attr("width", width)
       .attr("height", height)
       .style("opacity", 0)
-      .append("g")
-
-    svg
-      .append("svg")
-      .attr("width", width)
-      .attr("height", height)
       .append("g")
 
     const x = d3
       .scaleBand()
       .range([0, width - margin.left - margin.right])
       .domain(d3.range(1, 26))
-      .padding(0.1);
+      .padding(0.1)
 
     const y = d3
       .scaleBand()
       .range([0, height - margin.top - margin.bottom])
       .domain(d3.range(1, 21))
-      .padding(0.1);
+      .padding(0.1)
 
-    svg
+    g
       .append("g")
       .attr("transform", `translate(0, ${height - margin.top - margin.bottom})`)
       .call(d3.axisBottom(x))
       .selectAll("text")
       .attr("transform", "translate(2,0)")
-      .style("text-anchor", "end");
+      .style("text-anchor", "end")
+      .style("color", "rgb(60,64,67)")
 
-    svg
+    g
       .append("g")
       .call(d3.axisLeft(y))
       .selectAll("text")
-      .attr("transform", "translate(-10,0)");
+      .attr("transform", "translate(-10,0)")
+      .style("color", "rgb(60,64,67)")
 
-    const cells = svg.selectAll()
+    const cells = g.selectAll()
       .data(data, (d) => d.row + ':' + d.col);
 
     const tooltip = d3.select(heatmapRef.current)
@@ -127,9 +137,39 @@ const Heatmap = () => {
       .on("mousemove", mousemove)
       .on("mouseleave", mouseleave)
 
+    svg.call(zoom)
+
+    const resetZoom = () => {
+      console.log("hellos")
+      svg.transition().duration(750).call(
+        zoom.transform,
+        d3.zoomIdentity,
+        d3.zoomTransform(g.node()).invert([width / 2, height / 2])
+      );
+    }
+
+    resetButtonRef.current.addEventListener('click', resetZoom)
+
   }, []);
 
-  return <div style={{ textAlign: "center" }} ref={heatmapRef} />;
+  return (
+    <><div ref={heatmapRef} />
+      <SpeedDial
+        ariaLabel="test"
+        sx={{ position: "fixed", bottom: 16, right: 16, '& .MuiFab-primary:hover': { backgroundColor: 'white', color: 'grey' } }}
+        icon={< SpeedDialIcon />}
+        direction={"up"}
+      >
+        {actions.map((action) => (
+          <SpeedDialAction
+            key={action.name}
+            icon={action.icon}
+            tooltipTitle={action.name}
+            ref={resetButtonRef}
+          />
+        ))}
+      </SpeedDial>
+    </>);
 };
 
 export default Heatmap;

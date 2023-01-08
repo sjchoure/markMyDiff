@@ -12,15 +12,8 @@ import Button from "@mui/material/Button";
 import ArticleIcon from "@mui/icons-material/Article";
 import Grid from "@mui/material/Grid";
 import Pagination from "@mui/material/Pagination";
-import SpeedDial from "@mui/material/SpeedDial";
-import SpeedDialIcon from "@mui/material/SpeedDialIcon";
-import SpeedDialAction from "@mui/material/SpeedDialAction";
 import Docs from "./Docs.js"
 import Heatmap from "./Heatmap";
-
-import ReplayCircleFilledIcon from "@mui/icons-material/ReplayCircleFilled";
-
-const actions = [{ icon: <ReplayCircleFilledIcon />, name: "Run Task" }];
 
 const App = () => {
   const [companies, setCompanies] = React.useState(null);
@@ -91,8 +84,9 @@ const App = () => {
       <CssBaseline />
       <Box>
         <Heatmap />
+        
       </Box>
-    </Box>
+    </Box >
   );
 };
 
