@@ -237,6 +237,8 @@ const Heatmap = () => {
             .attr("fill", "currentColor")
             .attr("text-anchor", "start")
             .attr("font-weight", "bold")
+            .attr("font-size", "15px")
+            .style("color", "rgb(100,100,100)")
             .text(title)
         )
         .attr("transform", "rotate(90)");
