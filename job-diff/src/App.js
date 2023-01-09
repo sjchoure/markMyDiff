@@ -14,8 +14,16 @@ import Box from "@mui/material/Box";
 // import Pagination from "@mui/material/Pagination";
 // import Docs from "./Docs.js"
 import Heatmap from "./Heatmap";
+import AppBar from "@mui/material/AppBar";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
+import IconButton from "@mui/material/IconButton";
+import MenuIcon from "@mui/icons-material/Menu";
+import { useTheme } from "@mui/material/styles";
 
 const App = () => {
+  const theme = useTheme();
   const [companies, setCompanies] = React.useState(null);
   const [fileContents, setFileContents] = React.useState(null);
   const [fileStats, setFileStats] = React.useState(null);
@@ -30,7 +38,7 @@ const App = () => {
   }
 
   const fetchData = React.useCallback(async () => {
-    setCompanies(null)
+    setCompanies(null);
     try {
       await axios
         .get("https://horrible-falcon-29.telebit.io/folders/", {
@@ -72,7 +80,6 @@ const App = () => {
   }, [companies]);
 
   React.useEffect(() => {
-    
     fetchData();
     document.body.style.overflow = "hidden";
     return () => (document.body.style.overflow = "scroll");
@@ -83,12 +90,44 @@ const App = () => {
   }, [fetchFile]);
 
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box>
       <CssBaseline />
+      <AppBar
+        position="fixed"
+        sx={{
+          borderRadius: 2.5,
+          backgroundColor: "white",
+          left:10,
+          top: 10,
+          maxWidth: 380,
+          [theme.breakpoints.down('md')]: {
+            maxWidth: "calc(100% - 20px)",
+          },
+        }}
+      >
+        <Toolbar variant="dense">
+          <IconButton
+            size="large"
+            edge="start"
+            aria-label="menu"
+            sx={{ mr: 2 }}
+          >
+            <MenuIcon sx={{ color: "#333333" }} />
+          </IconButton>
+          <Typography
+            variant="h6"
+            component="div"
+            sx={{ flexGrow: 1, color: "grey" }}
+          >
+            Heatmap
+          </Typography>
+          <Button color="inherit">Login</Button>
+        </Toolbar>
+      </AppBar>
       <Box>
         <Heatmap />
       </Box>
-    </Box >
+    </Box>
   );
 };
 
