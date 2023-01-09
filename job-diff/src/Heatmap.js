@@ -5,13 +5,15 @@ import SpeedDialIcon from "@mui/material/SpeedDialIcon";
 import SpeedDialAction from "@mui/material/SpeedDialAction";
 import GpsFixedIcon from "@mui/icons-material/GpsFixed";
 import ControlPointIcon from "@mui/icons-material/ControlPoint";
-import RemoveCircleOutlineIcon from '@mui/icons-material/RemoveCircleOutline';
+import RemoveCircleOutlineIcon from "@mui/icons-material/RemoveCircleOutline";
 
 const Heatmap = () => {
   const heatmapRef = useRef(null);
   const resetButtonRef = useRef(null);
   const zoomInRef = useRef(null);
   const zoomOutRef = useRef(null);
+  const colorRef = useRef(null);
+  const color = d3.scaleSequential(d3.interpolateBlues);
 
   useEffect(() => {
     const data = [];
@@ -30,7 +32,6 @@ const Heatmap = () => {
 
     const cellSize = Math.sqrt((height * width) / 500) - 3;
     const margin = { top: 0, right: 0, bottom: 30, left: 30 };
-    const color = d3.scaleSequential(d3.interpolateBlues);
 
     let transW = window.innerWidth / 2 - width / 2;
     let transH = window.innerHeight / 2 - height / 2;
@@ -157,7 +158,108 @@ const Heatmap = () => {
     };
 
     zoomOutRef.current.addEventListener("click", zoomOut);
-  }, []);
+
+    function legend({
+      color,
+      title,
+      tickSize = 6,
+      widthL = 320,
+      heightL = 44 + tickSize,
+      marginTop = 18,
+      marginRight = 0,
+      marginBottom = 16 + tickSize,
+      marginLeft = 0,
+      ticks = width / 64,
+      tickFormat,
+      tickValues,
+    } = {}) {
+      g.append("svg")
+        .attr("width", widthL)
+        .attr("height", heightL)
+        .attr("viewBox", [0, 0, widthL, heightL])
+        .style("overflow", "visible")
+        .style("display", "block");
+
+      let tickAdjust = (s) =>
+        s
+          .selectAll(".tick line")
+          .attr("y1", marginTop + marginBottom - heightL)
+          .attr("transform", `translate(0,${-width + 28})`);
+
+      let x;
+
+      // Sequential
+      if (color.interpolator) {
+        x = Object.assign(
+          color
+            .copy()
+            .interpolator(
+              d3.interpolateRound(marginLeft, widthL - marginRight)
+            ),
+          {
+            range() {
+              return [marginLeft, widthL - marginRight];
+            },
+          }
+        );
+
+        g.append("image")
+          .attr("x", marginLeft)
+          .attr("y", marginTop - width)
+          .attr("width", widthL - marginLeft - marginRight)
+          .attr("height", heightL - marginTop - marginBottom)
+          .attr("preserveAspectRatio", "none")
+          .attr("xlink:href", ramp(color.interpolator()).toDataURL())
+          .attr("transform", "rotate(90)");
+
+        // scaleSequentialQuantile doesn’t implement ticks or tickFormat.
+        if (!x.ticks) {
+          if (tickValues === undefined) {
+            const n = Math.round(ticks + 1);
+            tickValues = d3
+              .range(n)
+              .map((i) => d3.quantile(color.domain(), i / (n - 1)));
+          }
+          if (typeof tickFormat !== "function") {
+            tickFormat = d3.format(
+              tickFormat === undefined ? ",f" : tickFormat
+            );
+          }
+        }
+      }
+
+      g.append("g")
+        .call((s) => s.select(".domain").remove())
+        .call((s) =>
+          s
+            .append("text")
+            .attr("x", marginLeft)
+            .attr("y", marginTop + marginBottom - heightL - 6 - width + 28)
+            .attr("fill", "currentColor")
+            .attr("text-anchor", "start")
+            .attr("font-weight", "bold")
+            .text(title)
+        )
+        .attr("transform", "rotate(90)");
+    }
+
+    function ramp(color, n = 256) {
+      var canvas = document.createElement("canvas");
+      canvas.width = n;
+      canvas.height = 1;
+      const context = canvas.getContext("2d");
+      for (let i = 0; i < n; ++i) {
+        context.fillStyle = color(i / (n - 1));
+        context.fillRect(i, 0, 1, 1);
+      }
+      return canvas;
+    }
+
+    legend({
+      color: d3.scaleSequential([0, 100], d3.interpolateBlues),
+      title: "Changes",
+    });
+  }, [color]);
 
   return (
     <>

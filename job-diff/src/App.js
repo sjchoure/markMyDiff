@@ -72,7 +72,10 @@ const App = () => {
   }, [companies]);
 
   React.useEffect(() => {
+    
     fetchData();
+    document.body.style.overflow = "hidden";
+    return () => (document.body.style.overflow = "scroll");
   }, [fetchData]);
 
   React.useEffect(() => {
@@ -84,7 +87,6 @@ const App = () => {
       <CssBaseline />
       <Box>
         <Heatmap />
-        
       </Box>
     </Box >
   );
