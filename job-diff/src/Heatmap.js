@@ -162,7 +162,7 @@ const Heatmap = () => {
       color,
       title,
       tickSize = 6,
-      widthL = 320,
+      widthL = 150,
       heightL = 44 + tickSize,
       marginTop = 18,
       marginRight = 0,
