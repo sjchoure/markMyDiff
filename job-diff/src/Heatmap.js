@@ -12,7 +12,6 @@ const Heatmap = () => {
   const resetButtonRef = useRef(null);
   const zoomInRef = useRef(null);
   const zoomOutRef = useRef(null);
-  const colorRef = useRef(null);
   const color = d3.scaleSequential(d3.interpolateBlues);
 
   useEffect(() => {
