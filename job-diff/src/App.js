@@ -14,13 +14,15 @@ import Box from "@mui/material/Box";
 // import Pagination from "@mui/material/Pagination";
 // import Docs from "./Docs.js"
 import Heatmap from "./Heatmap";
-import AppBar from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import IconButton from "@mui/material/IconButton";
+// import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useTheme } from "@mui/material/styles";
+import TypeaheadSearch from "./Typeahead";
+import Paper from '@mui/material/Paper';
+import Divider from '@mui/material/Divider';
+import IconButton from '@mui/material/IconButton';
+// import MenuIcon from '@mui/icons-material/Menu';
+import MapIcon from '@mui/icons-material/Map';
 
 const App = () => {
   const theme = useTheme();
@@ -92,42 +94,26 @@ const App = () => {
   return (
     <Box>
       <CssBaseline />
-      <AppBar
-        position="fixed"
+      <Paper
         sx={{
-          borderRadius: 2.5,
-          backgroundColor: "white",
-          left:10,
-          top: 10,
-          maxWidth: 380,
-          [theme.breakpoints.down('md')]: {
-            maxWidth: "calc(100% - 20px)",
+          p: '2px 4px', display: 'flex', alignItems: 'center', width: 400, position: "fixed", left: 15, top: 10, [theme.breakpoints.down('md')]: {
+            width: "calc(100% - 30px)",
           },
         }}
       >
-        <Toolbar variant="dense">
-          <IconButton
-            size="large"
-            edge="start"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon sx={{ color: "#333333" }} />
-          </IconButton>
-          <Typography
-            variant="h6"
-            component="div"
-            sx={{ flexGrow: 1, color: "grey" }}
-          >
-            Heatmap
-          </Typography>
-          <Button color="inherit">Login</Button>
-        </Toolbar>
-      </AppBar>
+        <IconButton sx={{ p: '10px' }} aria-label="menu">
+          <MenuIcon />
+        </IconButton>
+        <Box sx={{ flexGrow: 1 }}><TypeaheadSearch /></Box>
+        <Divider sx={{ height: 28, m: 0.5 }} orientation="vertical" />
+        <IconButton color="primary" sx={{ p: '10px' }} aria-label="directions">
+          <MapIcon />
+        </IconButton>
+      </Paper>
       <Box>
         <Heatmap />
       </Box>
-    </Box>
+    </Box >
   );
 };
 
