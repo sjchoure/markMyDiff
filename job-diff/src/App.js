@@ -110,9 +110,9 @@ const App = () => {
           <MapIcon />
         </IconButton>
       </Paper> */}
-      <Box sx={{ flexGrow: 1, height: "calc(100vh + 100px)" }}>
+      <Box sx={{ flexGrow: 1, height: "calc(100vh + 65px)", overflow: "hidden" }}>
         <iframe title="helloJobs" src="https://www.google.com/maps/d/u/0/embed?mid=1YJ-4LUY0oqneBwS88XuYmYUY42p0-ug&ehbc=2E312F" width="100%" height="100%" frameborder="0"
-          style={{ border: 0, marginTop: "-100px" }}></iframe>
+          style={{ border: 0, marginTop: "-65px" }}></iframe>
       </Box>
     </Box >
   );
