@@ -94,7 +94,7 @@ const App = () => {
   return (
     <Box>
       <CssBaseline />
-      <Paper
+      {/* <Paper
         sx={{
           p: '2px 4px', display: 'flex', alignItems: 'center', width: 400, position: "fixed", left: 15, top: 10, [theme.breakpoints.down('md')]: {
             width: "calc(100% - 30px)",
@@ -109,9 +109,10 @@ const App = () => {
         <IconButton color="primary" sx={{ p: '10px' }} aria-label="directions">
           <MapIcon />
         </IconButton>
-      </Paper>
-      <Box>
-        <Heatmap />
+      </Paper> */}
+      <Box sx={{ flexGrow: 1, height: "calc(100vh + 60px)" }}>
+        <iframe title="helloJobs" src="https://www.google.com/maps/d/embed?mid=15g9lkUO_O4-Qj7iASEnbNNHJKUKmkP5Y&ehbc=2E312F" width="100%" height="100%" frameborder="0"
+          style={{ border: 0, marginTop: "-60px" }}></iframe>
       </Box>
     </Box >
   );
